@@ -14,10 +14,10 @@ def inline_svg(name, cls):
     s = re.sub(r'href="#([^"]+)"', lambda m: f'href="#{name}-{m.group(1)}"', s)
     return re.sub(r'>\s+<', '><', s)
 
-def torn_edge(seed, w=1200, h=28, step=(6, 18), amp=(4, 24)):
-    """An SVG path whose top edge is ragged, filled to the bottom: a torn strip."""
-    # A wandering line (random walk) with small jitter, so it reads as torn paper
-    # rather than a saw blade; now and then a deeper nick.
+def torn_edge(seed, w=1200, h=28, step=(6, 18), amp=(4, 24), inverse=False, offset=0):
+    """An SVG strip with a ragged line across it, filled below the line (a torn edge),
+    or with inverse=True filled above it, pushed down by offset (paper over a photo).
+    The line is a random walk with small jitter so it reads as torn paper, not a saw blade."""
     r = random.Random(seed); x = 0; y = (amp[0] + amp[1]) / 2; pts = []
     while x < w:
         y = min(amp[1], max(amp[0], y + r.uniform(-3.5, 3.5)))
@@ -25,7 +25,9 @@ def torn_edge(seed, w=1200, h=28, step=(6, 18), amp=(4, 24)):
         pts.append((x, y + r.uniform(-1.2, 1.2) + nick)); x += r.uniform(*step)
     pts[0] = (0, (amp[0] + amp[1]) / 2)
     pts.append((w, pts[0][1]))  # same height at both ends so the strip tiles
-    d = 'M0 %d ' % h + ' '.join('L%.1f %.1f' % p for p in pts) + f' L{w} {h} Z'
+    line = ' '.join('L%.1f %.1f' % (px, py + offset) for px, py in pts)
+    h += offset
+    d = f'M0 0 {line} L{w} 0 Z' if inverse else f'M0 {h} {line} L{w} {h} Z'
     svg = f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {w} {h}' preserveAspectRatio='none'><path d='{d}'/></svg>"
     return "url(\"data:image/svg+xml," + svg.replace('<', '%3C').replace('>', '%3E').replace('#', '%23') + "\")"
 
@@ -43,7 +45,7 @@ for k, v in {
     '{{LOGO}}': inline_svg('primary-logo', 'logo'),
     '{{STAMP}}': inline_svg('stamp', 'stamp'),
     '{{MONOGRAM}}': inline_svg('a-h-circle', 'monogram'),
-    '{{TORN_A}}': torn_edge(3, step=(2, 6), amp=(6, 20)), '{{TORN_B}}': torn_edge(11, step=(2, 5), amp=(3, 17)),
+    '{{TORN_A}}': torn_edge(3, step=(2, 6), amp=(6, 20)), '{{TORN_A_INV}}': torn_edge(3, step=(2, 6), amp=(6, 20), inverse=True, offset=6), '{{TORN_B}}': torn_edge(11, step=(2, 5), amp=(3, 17)),
     '{{CARD_CLIP}}': torn_card(7),
 }.items():
     html = html.replace(k, v)
