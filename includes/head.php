@@ -27,6 +27,9 @@ $cssVersion  = @filemtime(__DIR__ . '/../css/style.css') ?: 1;
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= e($fullTitle) ?></title>
   <meta name="description" content="<?= e($description) ?>">
+<?php if (!$site['launched']): ?>
+  <meta name="robots" content="noindex, nofollow"><!-- until launch: see 'launched' in includes/config.php -->
+<?php endif; ?>
   <link rel="canonical" href="<?= e($canonical) ?>">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="<?= e($site['name']) ?>">
