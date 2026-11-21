@@ -1,0 +1,344 @@
+<title>Autumn House Style Sample</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=DM+Sans:opsz,wght@9..40,300..600&family=Oooh+Baby&display=swap">
+<style>
+/* Layout: full-width colour bands joined by torn-paper edges; content in a 1120px column.
+   One deliberate light look in the brand palette (no dark theme for the sample). */
+:root {
+  --primary: #EBE4D4;        /* main backgrounds */
+  --primary-light: #D4D7CE;  /* some backgrounds or boxes */
+  --secondary: #2B1800;      /* text, dividing lines */
+  --tertiary: #BE7E5B;       /* buttons, highlights */
+  --shade: #96988B;          /* buttons, boxes, call-outs */
+  --paper: #F7F3EA;          /* the pale core that shows along a torn edge */
+  --knockout: var(--primary);/* logo areas that were white in Affinity */
+
+  --serif: "Baskervville", "Baskerville", "Libre Baskerville", Georgia, serif;
+  --sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --hand: "Oooh Baby", "Segoe Script", cursive;
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--primary); color: var(--secondary); font: 18px/1.6 var(--serif); }
+.wrap { max-width: 1120px; margin-inline: auto; padding-left: var(--gutter); padding-right: var(--gutter-r); }
+
+/* ---------- Type ---------- */
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
+h3 { font-size: 1.5rem; }
+em { font-style: italic; }
+p { margin: 0; max-width: 62ch; }
+.label { font: 500 .75rem/1.4 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.hand { font-family: var(--hand); font-weight: 400; line-height: 1.1; }
+.stack { display: grid; gap: 1.1rem; align-content: start; }
+
+/* ---------- Buttons: square corners, double border ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font: 500 .78rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--secondary); background: transparent; text-decoration: none; cursor: pointer;
+  padding: 1rem 1.6rem; border: 1px solid currentColor; border-radius: 0;
+  outline: 1px solid currentColor; outline-offset: 3px;   /* the second line of the double border */
+  margin: 4px;                                            /* room for the outer line */
+  transition: background-color .2s, color .2s;
+}
+.btn:hover { background: var(--secondary); color: var(--primary); outline-color: var(--secondary); }
+.btn--fill { background: var(--tertiary); border-color: var(--tertiary); outline-color: var(--tertiary); color: var(--secondary); }
+.btn--fill:hover { background: var(--secondary); color: var(--primary); border-color: var(--secondary); }
+.btn--light { color: var(--primary); }
+.btn--light:hover { background: var(--primary); color: var(--secondary); outline-color: var(--primary); }
+.btn:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--tertiary); outline-offset: 4px;
+}
+.btns { display: flex; flex-wrap: wrap; gap: .9rem; align-items: center; }
+
+/* ---------- Torn-paper edges ---------- */
+/* A band with .torn gets a ragged top edge that overlaps the band above it.
+   ::before is the pale paper core, ::after the band's own colour, cut slightly lower. */
+.band { position: relative; background: var(--band, var(--primary)); padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+.torn::before, .torn::after {
+  content: ""; position: absolute; left: 0; right: 0; pointer-events: none;
+  -webkit-mask: var(--edge) 0 0 / 1200px 100% repeat-x; mask: var(--edge) 0 0 / 1200px 100% repeat-x;
+}
+.torn::before { top: -30px; height: 31px; background: var(--paper); --edge: {{TORN_B}}; }
+.torn::after  { top: -24px; height: 25px; background: var(--band, var(--primary)); --edge: {{TORN_A}}; }
+.torn--flip::before, .torn--flip::after { transform: scaleX(-1); }
+/* Over a photo the tear cuts into the photo itself: the band is masked to the outer
+   edge and pulled up by 30px, and a strip of paper sits along its top. */
+.torn-photo {
+  margin-top: -30px; padding-top: calc(clamp(3.5rem, 8vw, 6.5rem) + 30px);
+  -webkit-mask: {{TORN_B}} 0 0 / 1200px 31px repeat-x, linear-gradient(#000 0 0) 0 30px / 100% calc(100% - 30px) no-repeat;
+          mask: {{TORN_B}} 0 0 / 1200px 31px repeat-x, linear-gradient(#000 0 0) 0 30px / 100% calc(100% - 30px) no-repeat;
+}
+.torn-photo::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 31px; z-index: 1; background: var(--paper);
+  -webkit-mask: {{TORN_A_INV}} 0 0 / 1200px 100% repeat-x; mask: {{TORN_A_INV}} 0 0 / 1200px 100% repeat-x; }
+
+/* ---------- Image placeholder (one generic stand-in) ---------- */
+.ph {
+  position: relative; width: 100%; max-width: 100%; aspect-ratio: var(--ratio, 4 / 5);
+  background: repeating-linear-gradient(135deg, #a6a89c 0 1px, transparent 1px 14px), var(--shade);
+  display: grid; place-items: center; color: var(--secondary);
+}
+.ph::after { content: "Image"; font: 500 .7rem var(--sans); letter-spacing: .16em; text-transform: uppercase; background: var(--primary); padding: .4rem .7rem; }
+
+/* Torn card: a photo print with ragged edges and a soft shadow */
+.card-torn { filter: drop-shadow(0 10px 14px rgba(43, 24, 0, .22)); }
+.card-torn > div { background: var(--paper); padding: 14px 14px 44px; clip-path: {{CARD_CLIP}}; }
+.card-torn .hand { display: block; text-align: center; font-size: 1.5rem; margin-top: .6rem; }
+.tilt-l { transform: rotate(-2.2deg); }
+.tilt-r { transform: rotate(1.6deg); }
+
+/* ---------- Announcement bar ---------- */
+.notice { background: var(--secondary); color: var(--primary); font: 400 .8rem/1.4 var(--sans); letter-spacing: .06em; }
+.notice .wrap { padding-right: calc(var(--gutter-r) + 2rem) !important; display: flex; align-items: center; justify-content: center; gap: 1rem; padding-block: .55rem; position: relative; }
+.notice a { color: inherit; }
+.notice button { position: absolute; right: var(--gutter-r); background: none; border: 0; color: inherit; font-size: 1.1rem; cursor: pointer; padding: .2rem .4rem; }
+
+/* ---------- Header + hero ---------- */
+.hero { position: relative; color: var(--primary); background: var(--secondary); }
+.hero .ph { position: absolute; inset: 0; aspect-ratio: auto; opacity: .55; }
+.hero .ph::after { display: none; }
+.hero-inner { position: relative; display: grid; gap: clamp(3rem, 9vw, 7rem); padding-block: 1.4rem clamp(5rem, 11vw, 8.5rem); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo { width: clamp(150px, 20vw, 210px); height: auto; fill: currentColor; --knockout: transparent; }
+.menu { display: flex; gap: clamp(.9rem, 2vw, 1.8rem); list-style: none; margin: 0; padding: 0; font-size: 1rem; }
+.menu a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+.menu a:hover, .menu a[aria-current] { border-bottom-color: currentColor; }
+.menu-toggle { display: none; }
+.hero h1 { max-width: 13ch; }
+.hero .hand { font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--primary-light); }
+.hero p { font-size: 1.15rem; }
+@media (max-width: 900px) {
+  .menu-toggle { display: block; }
+  .menu-toggle summary { list-style: none; cursor: pointer; }
+  .menu-toggle summary::-webkit-details-marker { display: none; }
+  .menu-toggle[open] .menu { display: grid; position: absolute; right: var(--gutter-r); top: 4.4rem; z-index: 5; gap: .9rem;
+    background: var(--primary); color: var(--secondary); padding: 1.2rem 1.6rem; border: 1px solid var(--secondary); outline: 1px solid var(--secondary); outline-offset: 3px; }
+  .nav > .menu { display: none; }
+  .nav > .btn { display: none; }
+}
+
+/* ---------- Intro ---------- */
+.intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2.5rem, 7vw, 6rem); align-items: center; }
+.intro .media { position: relative; }
+.stamp { position: absolute; width: 130px; right: -18px; bottom: -34px; fill: var(--tertiary); transform: rotate(-8deg); }
+
+/* ---------- Features ---------- */
+.features { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+.features > div { padding: .5rem clamp(1rem, 3vw, 2.4rem); display: grid; gap: .8rem; justify-items: center; }
+.features > div + div { border-left: 1px solid rgba(43, 24, 0, .3); }
+.features .hand { font-size: 2.1rem; }
+.features p { font-size: 1rem; }
+
+/* ---------- Call-out ---------- */
+.callout { text-align: center; display: grid; gap: 1.4rem; justify-items: center; }
+.callout h2 { max-width: 24ch; }
+
+/* ---------- Style reference ---------- */
+.ref { display: grid; gap: 3.5rem; }
+.ref-head { display: grid; gap: .6rem; border-bottom: 1px solid var(--secondary); padding-bottom: 1.2rem; }
+.swatches { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
+.swatch { display: grid; gap: .5rem; font: 400 .85rem/1.4 var(--sans); }
+.swatch i { display: block; aspect-ratio: 1; border: 1px solid rgba(43, 24, 0, .25); }
+.swatch b { font-weight: 600; }
+.specimen { display: grid; gap: 1.6rem; }
+.specimen > div { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.5rem; align-items: baseline; border-top: 1px solid rgba(43, 24, 0, .2); padding-top: 1.2rem; }
+.specimen .label { opacity: .75; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.field { display: grid; gap: .45rem; font: 400 .85rem var(--sans); }
+.field input, .field select {
+  font: 400 1rem var(--sans); color: var(--secondary); background: var(--paper);
+  border: 1px solid var(--secondary); outline: 1px solid var(--secondary); outline-offset: 3px; border-radius: 0;
+  padding: .8rem .9rem; margin: 4px; width: calc(100% - 8px);
+}
+.faq details { border-bottom: 1px solid rgba(43, 24, 0, .35); }
+.faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; font-size: 1.05rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 300 1.4rem/1 var(--sans); }
+.faq details[open] summary::after { content: "\2013"; }
+.faq details p { padding-bottom: 1.1rem; font-size: 1rem; }
+
+/* ---------- Testimonial: styled like Lauren's review cards ----------
+   Serif text with italic highlights and large terracotta quote marks, set over a photo. */
+.review { background: var(--secondary); color: var(--primary); }
+.review .ph { position: absolute; inset: 0; aspect-ratio: auto; opacity: .5; }
+.review .ph::after { display: none; }
+.review figure { position: relative; margin: 0 0 0 auto; max-width: 30rem; display: grid; gap: 1.4rem; text-align: right; }
+.review blockquote { margin: 0; font: 400 clamp(1.7rem, 3.4vw, 2.5rem)/1.3 var(--serif); position: relative; }
+.review blockquote::before, .review blockquote::after {
+  font: 400 clamp(4.5rem, 9vw, 6.5rem)/1 var(--serif); color: var(--tertiary); position: absolute;
+}
+.review blockquote::before { content: "\201C"; left: -0.15em; top: -0.2em; transform: translateX(-100%); }
+.review blockquote::after  { content: "\201D"; right: -0.55em; bottom: -0.75em; }
+.review figcaption { font: 400 1.3rem var(--serif); padding-right: .5rem; }
+@media (max-width: 760px) {
+  .review blockquote { padding-left: 2.6rem; padding-right: 1.4rem; }
+  .review blockquote::before { left: 0; transform: none; }
+  .review blockquote::after { right: -0.15em; bottom: -0.85em; }
+}
+
+/* ---------- Footer ---------- */
+.foot { color: var(--primary); }
+.foot-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 2.5rem; align-items: start; text-align: center; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.foot a { color: inherit; text-decoration: none; }
+.foot a:hover { text-decoration: underline; }
+.foot .label { color: var(--primary-light); margin-bottom: 1rem; }
+.monogram { width: 92px; height: auto; fill: currentColor; }
+.foot-base { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid rgba(235, 228, 212, .3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font: 400 .8rem var(--sans); }
+
+/* ---------- Narrow screens ---------- */
+@media (max-width: 760px) {
+  .intro, .two { grid-template-columns: 1fr; }
+  .features { grid-template-columns: 1fr; gap: 2.2rem; }
+  .features > div + div { border-left: 0; border-top: 1px solid rgba(43, 24, 0, .3); padding-top: 2.2rem; }
+  .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .specimen > div { grid-template-columns: 1fr; gap: .4rem; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .stamp { width: 100px; right: -6px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="notice" id="notice">
+  <div class="wrap">
+    <span>Lorem ipsum dolor sit amet: <a href="#">consectetur adipiscing</a></span>
+    <button type="button" aria-label="Close announcement" onclick="document.getElementById('notice').hidden = true">&times;</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="ph" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <nav class="nav" aria-label="Main">
+      <a href="#" aria-label="Autumn House home" style="color:inherit">{{LOGO}}</a>
+      <ul class="menu">
+        <li><a href="#" aria-current="page">Home</a></li><li><a href="#">FAQs</a></li><li><a href="#">The Guide</a></li>
+        <li><a href="#">The House</a></li><li><a href="#">Family Stays</a></li><li><a href="#">Enquire</a></li>
+      </ul>
+      <a class="btn btn--light" href="#">Book now</a>
+      <details class="menu-toggle">
+        <summary class="btn btn--light">Menu</summary>
+        <ul class="menu">
+          <li><a href="#">Home</a></li><li><a href="#">FAQs</a></li><li><a href="#">The Guide</a></li>
+          <li><a href="#">The House</a></li><li><a href="#">Family Stays</a></li><li><a href="#">Enquire</a></li><li><a href="#">Book now</a></li>
+        </ul>
+      </details>
+    </nav>
+    <div class="stack" style="gap:1.4rem">
+      <span class="hand">Lorem ipsum dolor</span>
+      <h1>Lorem ipsum <em>dolor sit</em> amet elit</h1>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+      <div class="btns"><a class="btn btn--fill" href="#">Book your stay</a></div>
+    </div>
+  </div>
+</header>
+
+<section class="band torn">
+  <div class="wrap intro">
+    <div class="stack">
+      <span class="label">Lorem ipsum dolor</span>
+      <h2>Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em> elit sed do.</h2>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="btns"><a class="btn" href="#">Read our story</a></div>
+    </div>
+    <div class="media">
+      <div class="card-torn tilt-r"><div><div class="ph"></div><span class="hand">Lorem ipsum</span></div></div>
+      {{STAMP}}
+    </div>
+  </div>
+</section>
+
+<section class="band torn torn--flip" style="--band: var(--primary-light)">
+  <div class="wrap features">
+    <div><span class="hand">Lorem ipsum</span><p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></div>
+    <div><span class="hand">Dolor sit amet</span><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p></div>
+    <div><span class="hand">Consectetur</span><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p></div>
+  </div>
+</section>
+
+<section class="band torn" style="--band: var(--shade)">
+  <div class="wrap callout">
+    <span class="label">Lorem ipsum dolor?</span>
+    <h2>Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em> sed do eiusmod.</h2>
+    <div class="btns"><a class="btn btn--fill" href="#">Book your stay</a><a class="btn" href="#">Enquire</a></div>
+  </div>
+</section>
+
+<section class="band torn torn--flip">
+  <div class="wrap ref">
+    <div class="ref-head">
+      <span class="label">Style sample</span>
+      <h2>Colours, type <em>and</em> details</h2>
+      <p>A reference for the building blocks above. The finished site self-hosts these fonts.</p>
+    </div>
+
+    <div class="swatches">
+      <div class="swatch"><i style="background:var(--primary)"></i><b>Primary</b>#EBE4D4<br>Main backgrounds</div>
+      <div class="swatch"><i style="background:var(--primary-light)"></i><b>Primary light</b>#D4D7CE<br>Boxes, calm sections</div>
+      <div class="swatch"><i style="background:var(--secondary)"></i><b>Secondary</b>#2B1800<br>Text, lines, footer</div>
+      <div class="swatch"><i style="background:var(--tertiary)"></i><b>Tertiary</b>#BE7E5B<br>Buttons, highlights</div>
+      <div class="swatch"><i style="background:var(--shade)"></i><b>Shade</b>#96988B<br>Call-outs, boxes</div>
+    </div>
+
+    <div class="specimen">
+      <div><span class="label">Heading 1 · Baskervville</span><h1>Lorem <em>ipsum</em> dolor</h1></div>
+      <div><span class="label">Heading 2</span><h2>Consectetur <em>adipiscing</em> elit</h2></div>
+      <div><span class="label">Heading 3</span><h3>Sed do eiusmod tempor</h3></div>
+      <div><span class="label">Body · Baskervville</span><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <a href="#" style="color:inherit">reprehenderit in voluptate</a>.</p></div>
+      <div><span class="label">Label · DM Sans</span><span class="label">Lorem ipsum dolor sit</span></div>
+      <div><span class="label">Handwritten · Oooh Baby</span><span class="hand" style="font-size:2.4rem">Lorem ipsum dolor sit</span></div>
+    </div>
+
+    <div class="two">
+      <div class="stack">
+        <span class="label">Buttons</span>
+        <div class="btns"><a class="btn" href="#">Outline</a><a class="btn btn--fill" href="#">Filled</a></div>
+        <div class="field" style="margin-top:1.2rem"><label for="f-name">Full name</label><input id="f-name" type="text" placeholder="Lorem ipsum"></div>
+        <div class="field"><label for="f-topic">What are you enquiring about?</label><select id="f-topic"><option>Select an option</option><option>Lorem ipsum</option></select></div>
+      </div>
+      <div class="faq">
+        <span class="label">Questions that open and close</span>
+        <details><summary>Lorem ipsum dolor sit amet?</summary><p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details>
+        <details><summary>Ut enim ad minim veniam?</summary><p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></details>
+        <details><summary>Duis aute irure dolor?</summary><p>In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band torn-photo review">
+  <div class="ph" aria-hidden="true"></div>
+  <div class="wrap">
+    <figure>
+      <blockquote>Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. Sed do eiusmod tempor, <em>ut labore et dolore</em> magna aliqua.</blockquote>
+      <figcaption>– Lorem and Family</figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer class="band torn torn--flip foot" style="--band: var(--secondary)">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><p class="label">Explore</p>
+        <ul><li><a href="#">Home</a></li><li><a href="#">FAQs</a></li><li><a href="#">The Guide</a></li><li><a href="#">The House</a></li><li><a href="#">Family Stays</a></li><li><a href="#">Enquire</a></li></ul>
+      </div>
+      <div class="stack" style="justify-items:center">
+        {{MONOGRAM}}
+        <p style="font-size:1rem; max-width:34ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+        <a class="btn btn--light" href="#">Book now</a>
+      </div>
+      <div><p class="label">Stay in touch</p>
+        <ul><li><a href="https://www.instagram.com/atstayingseason/">Instagram</a></li><li><a href="#">Staying season</a></li><li><a href="#">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-base"><span>© Autumn House 2026</span><span>Style sample · placeholder text and images</span></div>
+  </div>
+</footer>
