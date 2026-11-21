@@ -13,6 +13,7 @@ Plain PHP and HTML: no database, no framework. Fonts and scripts are self-hosted
 | Wording at the top of the FAQs and The Guide pages | `faqs.php`, `the-guide.php` |
 | **FAQs** (every question, everywhere) | `content/faqs.md`: one file; instructions at its top |
 | **Guide posts** | `content/guide/`: one file per post; copy `_template.md` to start a new one |
+| Guide categories (Get to know, Local area, News) | `$guideCategories` in `includes/config.php` |
 | Site name, Book now link, Instagram, announcement bar, menu | `includes/config.php` |
 | Colours and fonts | The top of `css/style.css` |
 | Header, footer, "Ready to stay?" band, review, Instagram row | `includes/header.php`, `footer.php`, `callout.php`, `review.php`, `instagram.php` |
@@ -76,6 +77,16 @@ the commit ID of the version you want live.
 
 ## Making Winter's Nook or Spring Hideaway
 
-Copy this repository, then change `includes/config.php` (name, links), the
-colours at the top of `css/style.css`, the files in `images/logos/`, and set
-that repository's `REMOTE_DIR` to its own subdomain folder.
+Copy this repository, then:
+
+1. Change `includes/config.php` (name, links) and the colours at the top of
+   `css/style.css`, and replace the files in `images/logos/`.
+2. **The audience page.** Family Stays is written for Autumn House's usual
+   guests; the other houses speak to a different audience. Rename
+   `family-stays.php` (e.g. `couples-escapes.php`; the file name is the
+   address), change its line in `$menu` in `includes/config.php`, its line in
+   `dev/urls.txt`, and its `faq_list('family')` tag (plus the matching
+   `show on:` tags in `content/faqs.md`). Old links to `/family-stays`
+   then show "page not found".
+3. Set that repository's `REMOTE_DIR` to its own subdomain folder
+   (`winter.greensmokestudio.com` or `spring.greensmokestudio.com`).

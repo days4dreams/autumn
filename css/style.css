@@ -319,6 +319,12 @@ p { margin: 0; }
 .helpful-links { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
 
+/* The Guide: category buttons, then a grid of post cards */
+.guide-categories { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-bottom: clamp(2.5rem, 5vw, 3.5rem); }
+.guide-categories [aria-current] { background: var(--secondary); color: var(--primary); outline-color: var(--secondary); }
+.post-head .label a { text-decoration: none; }
+.post-head .label a:hover { text-decoration: underline; }
+
 /* The Guide: grid of post cards */
 .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem clamp(1.2rem, 3vw, 2.2rem); }
 .post-card { display: grid; gap: .9rem; text-align: center; text-decoration: none; }

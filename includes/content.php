@@ -94,9 +94,12 @@ function guide_posts()
         }
         [$meta, $body] = read_content_file($path);
         $post = $meta + [
-            'title' => $slug, 'date' => '', 'label' => '', 'summary' => '',
+            'title' => $slug, 'date' => '', 'category' => '', 'summary' => '',
             'image' => '', 'image_alt' => '', 'draft' => false,
         ];
+        global $guideCategories;
+        // The category's name, e.g. "Local area"; empty if the post has none (or a misspelt one).
+        $post['category_name'] = $guideCategories[$post['category']] ?? '';
         if ($post['draft'] === true && !is_local_preview()) {
             continue;
         }
@@ -109,6 +112,14 @@ function guide_posts()
         return strcmp($b['date'], $a['date']);
     });
     return $posts;
+}
+
+/** Posts in one category, newest first. */
+function guide_posts_in($category)
+{
+    return array_values(array_filter(guide_posts(), function ($p) use ($category) {
+        return $p['category'] === $category;
+    }));
 }
 
 /** One post, or null if it doesn't exist (or is a draft on the live site). */

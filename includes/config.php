@@ -53,6 +53,17 @@ $menu = [
 ];
 
 /**
+ * Guide categories. The key (e.g. 'local-area') is what a post's
+ * "category:" line uses, and appears in the address /the-guide?category=local-area.
+ * Prefer changing only the name; changing a key means updating the posts that use it.
+ */
+$guideCategories = [
+    'get-to-know' => 'Get to know',
+    'local-area'  => 'Local area',
+    'news'        => 'News',
+];
+
+/**
  * Private settings written by the publishing workflow (not in the public
  * repository): currently just the address the Enquire form sends to.
  */

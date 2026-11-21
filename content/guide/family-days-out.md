@@ -1,7 +1,7 @@
 ---
 title: Family days out lorem ipsum
 date: 2026-11-14
-label: Families
+category: news
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 image:
 image_alt:

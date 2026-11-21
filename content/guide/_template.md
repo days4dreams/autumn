@@ -10,8 +10,8 @@
 title: The headline of the post
 # Newest posts appear first on The Guide
 date: 2026-11-21
-# Small capitals above the title, e.g. Food & drink (categories come later)
-label: Stay guides
+# One of: get-to-know, local-area, news (set in includes/config.php)
+category: local-area
 # One or two sentences, used on The Guide page and for Google
 summary: A short summary of the post.
 # The photo on The Guide page (put the file in /images/guide/)

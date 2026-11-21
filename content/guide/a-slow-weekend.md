@@ -1,7 +1,7 @@
 ---
 title: A slow weekend lorem ipsum
 date: 2026-11-20
-label: Stay guides
+category: get-to-know
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 image:
 image_alt:

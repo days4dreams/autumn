@@ -1,6 +1,7 @@
 /
 /faqs
 /the-guide
+/the-guide?category=local-area
 /the-guide/a-slow-weekend
 /the-house
 /family-stays

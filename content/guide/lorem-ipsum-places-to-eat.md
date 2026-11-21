@@ -1,7 +1,7 @@
 ---
 title: Lorem ipsum places to eat
 date: 2026-11-18
-label: Food & drink
+category: local-area
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 image:
 image_alt:

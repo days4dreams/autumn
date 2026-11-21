@@ -1,7 +1,7 @@
 ---
 title: Dolor sit amet walks nearby
 date: 2026-11-16
-label: See & do
+category: local-area
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 image:
 image_alt:

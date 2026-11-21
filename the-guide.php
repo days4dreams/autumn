@@ -30,8 +30,8 @@ if ($post !== null):
 
 <article>
   <header class="wrap post-head">
-<?php if ($post['label'] !== ''): ?>
-    <p class="label"><?= e($post['label']) ?><?= $post['draft'] === true ? ' · Draft' : '' ?></p>
+<?php if ($post['category_name'] !== ''): ?>
+    <p class="label"><a href="/the-guide?category=<?= e($post['category']) ?>"><?= e($post['category_name']) ?></a><?= $post['draft'] === true ? ' · Draft' : '' ?></p>
 <?php endif; ?>
     <h1><?= markdown_line($post['title']) ?></h1>
   </header>
@@ -85,7 +85,14 @@ endif;
 /* ---------------------------------------------------------------- */
 /* The Guide page: every post                                        */
 /* ---------------------------------------------------------------- */
-$title = 'The Guide';
+// ?category=local-area shows one category; anything unknown shows every post.
+$category = $_GET['category'] ?? '';
+if (!isset($guideCategories[$category])) {
+    $category = '';
+}
+$posts = ($category !== '') ? guide_posts_in($category) : guide_posts();
+
+$title = ($category !== '') ? $guideCategories[$category] . ' | The Guide' : 'The Guide';
 $description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.';
 $overPhoto = true;
 require __DIR__ . '/includes/head.php';
@@ -102,15 +109,21 @@ require __DIR__ . '/includes/head.php';
 
 <section class="band torn">
   <div class="wrap">
-<?php $posts = guide_posts(); if (!$posts): ?>
-    <p class="centre-text">New posts are on their way.</p>
+    <nav class="guide-categories" aria-label="Guide categories">
+      <a class="btn btn--small" href="/the-guide"<?= $category === '' ? ' aria-current="page"' : '' ?>>All posts</a>
+<?php foreach ($guideCategories as $key => $name): ?>
+      <a class="btn btn--small" href="/the-guide?category=<?= e($key) ?>"<?= $category === $key ? ' aria-current="page"' : '' ?>><?= e($name) ?></a>
+<?php endforeach; ?>
+    </nav>
+<?php if (!$posts): ?>
+    <p class="centre-text">New posts are on their way. <a href="/the-guide">See all posts</a></p>
 <?php else: ?>
     <div class="post-grid">
 <?php foreach ($posts as $p): ?>
       <a class="post-card" href="<?= e($p['url']) ?>">
         <?= content_image($p['image'], $p['image_alt']) ?>
-<?php if ($p['label'] !== ''): ?>
-        <span class="label"><?= e($p['label']) ?><?= $p['draft'] === true ? ' · Draft' : '' ?></span>
+<?php if ($p['category_name'] !== ''): ?>
+        <span class="label"><?= e($p['category_name']) ?><?= $p['draft'] === true ? ' · Draft' : '' ?></span>
 <?php endif; ?>
         <h3><?= markdown_line($p['title']) ?></h3>
       </a>
