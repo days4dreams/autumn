@@ -99,7 +99,7 @@ require __DIR__ . '/includes/head.php';
 ?>
 
 <section class="hero hero--short hero--centre">
-  <?= placeholder('', 'band-photo') ?>
+  <?= content_image('/images/home/coffee-table.jpg', 'Books on the coffee table in the sitting room', 'band-photo', '') ?>
   <div class="shade-over"></div>
   <div class="wrap stack centre">
     <h1>Lorem ipsum <em>guide</em></h1>

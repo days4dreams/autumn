@@ -3,8 +3,8 @@ title: Family days out lorem ipsum
 date: 2026-11-14
 category: news
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-image:
-image_alt:
+image: /images/guide/double-bedroom.jpg
+image_alt: The double bedroom
 draft: false
 ---
 
@@ -12,12 +12,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Lorem *ipsum* dolor
 
-![](/images/guide/placeholder.jpg)
+![Paddington books in the twin room](/images/home/childrens-books.jpg)
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ## Duis aute *irure*
 
-![](/images/guide/placeholder.jpg)
+![A draughts set on the coffee table](/images/family/draughts.jpg)
 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

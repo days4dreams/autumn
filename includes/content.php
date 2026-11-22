@@ -205,7 +205,11 @@ function content_image($src, $alt, $class = '', $ratio = '')
         return placeholder($alt, $class, $ratio);
     }
     $style = $ratio ? ' style="aspect-ratio:' . e($ratio) . '"' : '';
-    return '<img src="' . e($src) . '" alt="' . e($alt) . '" class="photo ' . e($class) . '"' . $style . ' loading="lazy">';
+    $size = @getimagesize(__DIR__ . '/..' . $src);
+    $dims = $size ? ' width="' . $size[0] . '" height="' . $size[1] . '"' : '';
+    // The big photo at the top of a page loads straight away; the rest load as you scroll.
+    $loading = ($class === 'band-photo') ? ' fetchpriority="high"' : ' loading="lazy"';
+    return '<img src="' . e($src) . '" alt="' . e($alt) . '" class="photo ' . e($class) . '"' . $style . $dims . $loading . '>';
 }
 
 /* ------------------------------------------------------------------ */

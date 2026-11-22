@@ -104,7 +104,7 @@ function field_error($errors, $key)
 ?>
 
 <section class="hero hero--short hero--centre">
-  <?= placeholder('', 'band-photo') ?>
+  <?= content_image('/images/house/kitchen-window.jpg', 'The kitchen window', 'band-photo', '') ?>
   <div class="shade-over"></div>
   <div class="wrap stack centre">
     <h1>Lorem ipsum <em>Autumn House</em></h1>
