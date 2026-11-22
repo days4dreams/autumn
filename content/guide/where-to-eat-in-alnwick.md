@@ -22,6 +22,8 @@ There's plenty to eat within a ten-minute walk of Autumn House, and even more a 
 
 **Mumbai of Alnwick.** A long-running and reliable spot when you're craving Indian food. It can be busy, even on weeknights.
 
+**Our own favourites.** David recommends The Ale Gate micropub for a relaxed pint, and Lauren is fond of a doorstop sandwich at the Barter Books café. For local food with very few food miles, try Turnbulls of Alnwick.
+
 ## Further *afield*
 
 ![Stools at the kitchen breakfast bar](/images/guide/breakfast-bar.jpg)

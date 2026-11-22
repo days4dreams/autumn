@@ -8,7 +8,7 @@ image_alt: A framed map of Northumberland
 draft: false
 ---
 
-You don't need to go far for a good walk from Autumn House. Here are three of our favourites, from an easy amble to a bracing coastal stretch.
+You don't need to go far for a good walk from Autumn House. Here are some of our favourites, from an easy amble to a bracing coastal stretch.
 
 ## Hulne *Park*
 
@@ -24,4 +24,12 @@ Drive 12km to Craster, famous for its kippers, then follow the clifftop path to 
 
 ## Alnmouth *beach*
 
-A short drive from Alnwick, Alnmouth has some of the best views on the coast and a lovely beach for a gentle stroll, whatever the weather.
+A short drive from Alnwick, Alnmouth has some of the best views on the coast. Walk around the estuary, or take a gentle stroll along the beach, whatever the weather.
+
+## Warkworth *and* Thrunton
+
+Charming Warkworth is perfect for river strolls, a historic castle and handmade chocolate treats. Inland, Thrunton Forest has miles of trails for hiking, running and biking.
+
+## Birds *by the sea*
+
+Bring binoculars: an outstanding range of species can be spotted along the coast, especially around Hauxley Nature Reserve.

@@ -40,7 +40,7 @@ Autumn House is non-smoking inside, but you're welcome to use the front or back 
 
 ### Where can we buy food?
 show on: house
-There's a Co-op less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
+There's a Co-op less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Sainsbury's, M&S and Turnbulls are a three-minute drive away at Willowburn Retail Park, and there's an Aldi on South Road. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
 
 ## The House
 
@@ -54,7 +54,7 @@ An induction hob, oven, microwave, kettle and an integrated washer-dryer, plus p
 
 ### How is the house heated?
 show on: house
-Each room has its own heating panel, and the kitchen and bathroom have underfloor heating. There's a heated towel rail in the bathroom, too.
+All the heating is electric and warms up quickly. Each room has its own panel heater, the kitchen and bathroom have underfloor heating, and there's a heated towel rail in the bathroom. The living room also has an electric stove for a cosy glow.
 
 ### Is there a garden?
 show on: house, family
