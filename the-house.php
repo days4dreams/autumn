@@ -8,11 +8,20 @@ $description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 
-// The photo grid: [photo, description, shape (width/height)]. Shapes vary to make the grid interesting.
+// The photo grid: [photo, description]. Add or remove lines freely; photos keep their own shape.
 $housePhotos = [
-    ['', '', '4/5'], ['', '', '3/4'], ['', '', '4/3'],
-    ['', '', '1/1'], ['', '', '4/5'], ['', '', '3/4'],
-    ['', '', '4/3'], ['', '', '3/4'], ['', '', '4/5'],
+    ['/images/house/kitchen.jpg', 'The kitchen'],
+    ['/images/house/coffee-table.jpg', 'The coffee table and writing bureau in the sitting room'],
+    ['/images/house/double-bed.jpg', 'The double bed with gingham bedding and green cushions'],
+    ['/images/house/shower.jpg', 'The shower over the bath, with brass fittings and green tiles'],
+    ['/images/house/rocking-chair.jpg', 'The rocking chair in the evening lamplight'],
+    ['/images/house/kitchen-window.jpg', 'The kitchen sink under the window'],
+    ['/images/house/dresser.jpg', 'The dresser in the double bedroom'],
+    ['/images/house/towel-ladder.jpg', 'The towel ladder in the bathroom'],
+    ['/images/house/writing-desk.jpg', 'The writing bureau, set up as a desk'],
+    ['/images/house/pressed-flowers.jpg', 'Pressed flowers in a gold frame'],
+    ['/images/house/stairs.jpg', 'The painted green stairs'],
+    ['/images/house/cushions.jpg', 'Cushions on the double bed'],
 ];
 ?>
 
@@ -29,14 +38,14 @@ $housePhotos = [
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </div>
-    <?= placeholder('', '', '') ?>
+    <?= content_image('/images/house/sitting-room-alcove.jpg', 'An alcove in the sitting room with a writing bureau and shelves', '', '') ?>
   </div>
 </section>
 
 <section class="band torn">
   <div class="wrap gallery">
-<?php foreach ($housePhotos as [$src, $alt, $shape]): ?>
-    <?= content_image($src, $alt, '', $shape) ?>
+<?php foreach ($housePhotos as [$src, $alt]): ?>
+    <?= content_image($src, $alt) ?>
 <?php endforeach; ?>
   </div>
 </section>

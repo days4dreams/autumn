@@ -39,7 +39,7 @@ $site = [
 
     // Shown on Google and when a page is shared, unless a page sets its own.
     'description'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    'default_image' => '/images/placeholder.svg',
+    'default_image' => '/images/home/living-room-fire.jpg',
 ];
 
 /** The main menu, in order. Also used for the "Explore" list in the footer. */

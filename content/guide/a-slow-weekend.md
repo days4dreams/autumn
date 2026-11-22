@@ -3,8 +3,8 @@ title: A slow weekend lorem ipsum
 date: 2026-11-20
 category: get-to-know
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-image:
-image_alt:
+image: /images/guide/wilding.jpg
+image_alt: Books on the side table in the sitting room
 draft: false
 ---
 
@@ -15,7 +15,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 #### Friday
 ## Arrive and *settle in*
 
-![](/images/guide/placeholder.jpg)
+![Stools at the kitchen breakfast bar](/images/guide/breakfast-bar.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -24,20 +24,20 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 #### Saturday morning
 ## Wake *with* the house
 
-![](/images/guide/placeholder.jpg)
+![The rocking chair by the window](/images/home/rocking-chair.jpg)
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-![](/images/guide/placeholder-1.jpg)
-![](/images/guide/placeholder-2.jpg)
-![](/images/guide/placeholder-3.jpg)
+![Autumn stems in a glass vase](/images/guide/autumn-stems.jpg)
+![Yellow leaves against a pink wall](/images/guide/yellow-leaves.jpg)
+![Cushions on the double bed](/images/guide/cushions.jpg)
 
 #### Saturday afternoon
 ## Choose your *pace*
 
-![](/images/guide/placeholder.jpg)
+![The reading corner in the evening](/images/home/reading-corner-evening.jpg)
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 

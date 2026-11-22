@@ -1,10 +1,16 @@
 <?php
 /**
  * The row of six photos above the footer, with a button to Instagram.
- * Photos: swap the placeholders for real ones by changing the list below,
- * e.g. ['/images/instagram/1.jpg', 'Describe the photo'].
+ * Photos: change the list below: [photo, description of the photo].
  */
-$instagramPhotos = array_fill(0, 6, ['', '']);
+$instagramPhotos = [
+    ['/images/instagram/house-sign.jpg', 'The Autumn House sign by the front door'],
+    ['/images/instagram/autumn-stems.jpg', 'Autumn leaves in a vase on the windowsill'],
+    ['/images/instagram/shelf.jpg', 'A vase, brass bell and bird print on a shelf'],
+    ['/images/instagram/basin.jpg', 'The brass tap and green tiles in the bathroom'],
+    ['/images/instagram/green-lamp.jpg', 'A green lamp on the bedroom windowsill'],
+    ['/images/instagram/green-stairs.jpg', 'The painted green staircase'],
+];
 ?>
 <section class="instagram band torn" aria-label="Instagram">
   <div class="wrap">

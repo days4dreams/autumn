@@ -11,7 +11,7 @@ require __DIR__ . '/includes/head.php';
 ?>
 
 <section class="hero hero--short hero--centre">
-  <?= placeholder('', 'band-photo') ?>
+  <?= content_image('/images/family/twin-room-doorway.jpg', 'The twin bedroom, seen through the doorway', 'band-photo', '') ?>
   <div class="shade-over"></div>
   <div class="wrap stack centre">
     <p class="label">Lorem ipsum dolor sit</p>
@@ -31,19 +31,19 @@ require __DIR__ . '/includes/head.php';
       </div>
     </div>
     <div class="media">
-      <div class="card-torn tilt-r"><div><?= placeholder('', '', '4/5') ?><span class="hand">Lorem ipsum</span></div></div>
+      <div class="card-torn tilt-r"><div><?= content_image('/images/family/storage-boxes.jpg', 'Colourful storage boxes in the twin room', '', '4/5') ?><span class="hand">Lorem ipsum</span></div></div>
     </div>
   </div>
 </section>
 
 <section class="band torn-photo statement" style="padding-bottom: 0">
-  <?= placeholder('', 'band-photo') ?>
+  <?= content_image('/images/family/double-bedroom.jpg', 'The double bedroom with gingham bedding', 'band-photo', '') ?>
   <div class="wrap" style="min-height: 22rem"></div>
 </section>
 
 <section class="band" style="--band: var(--primary-light)">
   <div class="wrap overlap">
-    <div class="card-torn tilt-l"><div><?= placeholder('', '', '4/5') ?><span class="hand">Lorem ipsum</span></div></div>
+    <div class="card-torn tilt-l"><div><?= content_image('/images/family/draughts.jpg', 'A draughts set on the coffee table', '', '4/5') ?><span class="hand">Lorem ipsum</span></div></div>
     <div class="stack">
       <p class="label">Lorem ipsum dolor</p>
       <h2>Family holidays at <em>Autumn House</em> can be as full or as slow as you need them to be.</h2>
@@ -73,7 +73,7 @@ require __DIR__ . '/includes/head.php';
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
       <?= $familyFaqs ?>
     </div>
-    <?= placeholder('', '', '') ?>
+    <?= content_image('/images/family/bedroom-dresser.jpg', 'The dresser in the double bedroom', '', '') ?>
   </div>
 </section>
 <?php endif; ?>
