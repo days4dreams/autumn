@@ -7,7 +7,7 @@
  * The form's wording and choices are written straight in below: edit them here.
  */
 $title = 'Enquire';
-$description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.';
+$description = 'Get in touch with Lauren and David about staying at Autumn House in Alnwick: dates, family stays, hampers and special occasions.';
 $overPhoto = true;
 require __DIR__ . '/includes/content.php';
 
@@ -107,7 +107,7 @@ function field_error($errors, $key)
   <?= content_image('/images/house/kitchen-window.jpg', 'The kitchen window', 'band-photo', '') ?>
   <div class="shade-over"></div>
   <div class="wrap stack centre">
-    <h1>Lorem ipsum <em>Autumn House</em></h1>
+    <h1>Get in touch with <em>Autumn House</em></h1>
   </div>
 </section>
 
@@ -116,7 +116,7 @@ function field_error($errors, $key)
     <div class="stack">
       <h2>Planning your stay or something special at <em>Autumn House?</em></h2>
       <p class="lead">We would love to hear from you.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Send us a message and we'll come back to you as soon as we can.</p>
+      <p>Ask us anything about the house, check dates, or tell us about a birthday, anniversary or family trip and we'll help make it special. Send us a message and we'll come back to you as soon as we can.</p>
       <p class="label" style="margin-top: 1rem">Helpful links</p>
       <ul class="helpful-links">
         <li><a href="<?= e($site['booking_url']) ?>"<?= link_attrs($site['booking_url']) ?>>Book your stay</a></li>
@@ -192,7 +192,7 @@ function field_error($errors, $key)
   <div class="wrap split" style="align-items: start">
     <div class="stack">
       <p class="label">Before you ask</p>
-      <h2>Lorem ipsum <em>dolor</em> sit amet</h2>
+      <h2>Before you <em>ask</em></h2>
       <p><a href="/faqs">See all FAQs</a></p>
     </div>
     <?= $enquireFaqs ?>

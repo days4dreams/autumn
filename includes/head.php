@@ -49,7 +49,7 @@ $cssVersion  = @filemtime(__DIR__ . '/../css/style.css') ?: 1;
 <?php if ($site['announcement']['text'] !== ''): ?>
 <div class="announcement" id="announcement">
   <div class="wrap">
-    <p><?php if ($site['announcement']['link'] !== ''): ?><a href="<?= e($site['announcement']['link']) ?>"<?= link_attrs($site['announcement']['link']) ?>><?= e($site['announcement']['text']) ?></a><?php else: ?><?= e($site['announcement']['text']) ?><?php endif; ?></p>
+    <p><?= announcement_html($site['announcement']) ?></p>
     <button type="button" class="announcement-close" aria-label="Close announcement" hidden>&times;</button>
   </div>
 </div>

@@ -185,7 +185,8 @@ p { margin: 0; }
 .hero--short { min-height: min(62vh, 36rem); }
 .hero--centre { text-align: center; }
 .hero--centre h1, .hero--centre p { margin-inline: auto; }
-.hero--centre h1 { max-width: 20ch; }
+.hero--centre h1 { max-width: 30ch; }
+.hero--centre p { max-width: 60ch; }
 .hero--centre .btns { justify-content: center; }
 
 /* Page title for pages without a hero photo */
@@ -265,7 +266,7 @@ p { margin: 0; }
 
 /* "Ready to stay?" call-out */
 .callout-inner { display: grid; gap: 1.4rem; justify-items: center; text-align: center; }
-.callout-inner h2 { max-width: 24ch; }
+.callout-inner h2 { max-width: 34ch; }
 .callout-inner .btns { justify-content: center; }
 
 /* Questions that open and close (FAQs) */

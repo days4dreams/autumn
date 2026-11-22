@@ -4,7 +4,7 @@
  * the whole site); this page shows all of them, in their groups.
  */
 $title = 'FAQs';
-$description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.';
+$description = 'Answers to common questions about staying at Autumn House in Alnwick: check-in, parking, the house, families and booking direct.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>
@@ -13,8 +13,8 @@ require __DIR__ . '/includes/head.php';
   <div class="wrap faq-page">
     <div class="faq-page-intro stack">
       <h1>Frequently asked questions</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur <span class="hand">adipiscing elit</span></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="lead">Everything you need to know <span class="hand">before you arrive</span></p>
+      <p>Check-in times, parking, what's in the kitchen, bringing the dog and booking direct.</p>
       <p>Anything we haven't answered? <a href="/enquire">Send us a message</a>. We're always happy to help.</p>
     </div>
     <div>

@@ -4,7 +4,7 @@
  * Headings are <h2>, paragraphs <p>, lists <ul><li>.
  */
 $title = 'Terms';
-$description = 'The terms for staying at Autumn House.';
+$description = 'Booking terms for Autumn House: check-in times, payment, cancellations, deposits and house rules.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>
@@ -15,22 +15,48 @@ require __DIR__ . '/includes/head.php';
 
 <section class="band" style="padding-top: 0">
   <div class="wrap narrow prose">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>These terms apply to every booking made directly with Autumn House. By making a reservation, you agree to them. If anything is unclear, please <a href="/enquire">get in touch</a> before you book.</p>
 
-    <h2>Lorem ipsum</h2>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Booking</h2>
+    <p>To book, please give us accurate details, including your name, your dates and the number of guests. Your booking is confirmed once you receive a confirmation email from us. If it doesn't arrive, please <a href="/enquire">contact us</a>.</p>
+
+    <h2>Check-in and check-out</h2>
     <ul>
-      <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</li>
-      <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</li>
-      <li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</li>
+      <li>Check-in is from 15:00.</li>
+      <li>Check-out is by 11:00.</li>
+    </ul>
+    <p>This gives us time to clean and prepare the house for the next guests. Ask us about early check-in or late check-out; we'll help when we can.</p>
+
+    <h2>Payment</h2>
+    <p>We take 50% of the total when you book, and the remaining 50% 14 days before you arrive. The full amount, any extras and the cancellation terms are shown when you book.</p>
+
+    <h2>Security deposit</h2>
+    <p>We place a hold of £125 on your card to cover any damage or loss during your stay. It's released once we've checked that everything is in order, usually within 1–2 days of check-out.</p>
+
+    <h2>Cancellations and changes</h2>
+    <ul>
+      <li>Cancel more than 21 days before your arrival and there's no charge.</li>
+      <li>Cancel within 21 days of arrival and we keep the 50% paid at booking.</li>
+      <li>Non-refundable rates can't be refunded.</li>
+      <li>Changes to dates are at our discretion.</li>
+      <li>There are no refunds for leaving early or for unused nights.</li>
+    </ul>
+    <p>Refunds are made to your original payment method within 14 working days. In unforeseen circumstances, such as extreme weather, we may adjust these terms and will tell you promptly.</p>
+
+    <h2>During your stay</h2>
+    <ul>
+      <li>No more than four guests may stay at Autumn House at any time.</li>
+      <li>Please keep noise down after 22:30, out of respect for our neighbours.</li>
+      <li>No parties or events, please.</li>
+      <li>Autumn House is non-smoking and non-vaping inside. You're welcome to use the front or back garden. Smoking indoors may result in a cleaning charge.</li>
+      <li>Please leave the house as you found it. Any damage will be charged.</li>
     </ul>
 
-    <h2>Dolor sit amet</h2>
-    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+    <h2>Pets</h2>
+    <p>Sorry, we don't normally allow pets. If you'd like to bring one, <a href="/enquire">drop us a message</a> and we'll see what we can do.</p>
 
-    <h2>Consectetur</h2>
-    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+    <h2>Your belongings</h2>
+    <p>Please look after your belongings. We can't be held responsible for loss, theft or damage to guests' property, or for disruption beyond our control. If something isn't right during your stay, please tell us straight away so we can put it right.</p>
   </div>
 </section>
 
