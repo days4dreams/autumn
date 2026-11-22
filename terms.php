@@ -4,7 +4,7 @@
  * Headings are <h2>, paragraphs <p>, lists <ul><li>.
  */
 $title = 'Terms';
-$description = 'Booking terms for Autumn House: check-in times, payment, cancellations, deposits, pets and house rules.';
+$description = 'Booking terms for Autumn House: check-in times, payment, cancellations, deposits and house rules.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>
@@ -28,15 +28,15 @@ require __DIR__ . '/includes/head.php';
     <p>This gives us time to clean and prepare the house for the next guests. Ask us about early check-in or late check-out; we'll help when we can.</p>
 
     <h2>Payment</h2>
-    <p>We take 30% of the total when you book, and the remaining 70% 14 days before you arrive. The full amount, any extras and the cancellation terms are shown when you book.</p>
+    <p>We take 50% of the total when you book, and the remaining 50% 14 days before you arrive. The full amount, any extras and the cancellation terms are shown when you book.</p>
 
     <h2>Security deposit</h2>
     <p>We place a hold of £125 on your card to cover any damage or loss during your stay. It's released once we've checked that everything is in order, usually within 1–2 days of check-out.</p>
 
     <h2>Cancellations and changes</h2>
     <ul>
-      <li>Cancel more than 14 days before your arrival and there's no charge.</li>
-      <li>Cancel within 14 days of arrival and we keep the 30% paid at booking.</li>
+      <li>Cancel more than 21 days before your arrival and there's no charge.</li>
+      <li>Cancel within 21 days of arrival and we keep the 50% paid at booking.</li>
       <li>Non-refundable rates can't be refunded.</li>
       <li>Changes to dates are at our discretion.</li>
       <li>There are no refunds for leaving early or for unused nights.</li>
@@ -53,7 +53,7 @@ require __DIR__ . '/includes/head.php';
     </ul>
 
     <h2>Pets</h2>
-    <p>Well-behaved pets are welcome. A £30 pet fee per stay covers the extra cleaning.</p>
+    <p>Sorry, we don't normally allow pets. If you'd like to bring one, <a href="/enquire">drop us a message</a> and we'll see what we can do.</p>
 
     <h2>Your belongings</h2>
     <p>Please look after your belongings. We can't be held responsible for loss, theft or damage to guests' property, or for disruption beyond our control. If something isn't right during your stay, please tell us straight away so we can put it right.</p>

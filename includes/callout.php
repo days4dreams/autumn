@@ -12,7 +12,7 @@ $calloutText  = $calloutText ?? 'Book direct with us for <em>our best rates</em>
     <h2><?= $calloutText /* may contain <em> for italics */ ?></h2>
     <div class="btns">
       <a class="btn btn--fill" href="<?= e($site['booking_url']) ?>"<?= link_attrs($site['booking_url']) ?>>Book your stay</a>
-      <a class="btn" href="/enquire">Enquire</a>
+      <a class="btn" href="/the-house">See the house</a>
     </div>
   </div>
 </section>

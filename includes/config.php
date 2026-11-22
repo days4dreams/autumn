@@ -18,7 +18,7 @@ $site = [
     'launched' => false,
 
     // Where the "Book now" buttons go. '#' until the booking link is ready.
-    'booking_url' => 'https://autumn-house.amenitiz.io/en/booking/room#DatesGuests-BE', // the Amenitiz booking page (direct bookings)
+    'booking_url' => '/enquire', // Book now buttons; change to the booking page once direct booking is set up
 
     // Footer links still to come. '#' until they're ready.
     'staying_season_url' => '#',
@@ -31,10 +31,12 @@ $site = [
     'instagram_handle' => '@atstayingseason',
 
     // The thin bar across the very top of every page.
-    // Leave 'text' empty ('') to switch it off. 'link' is optional.
+    // Leave 'text' empty ('') to switch it off. 'link' is optional;
+    // 'link_words' are the words in 'text' that become the link.
     'announcement' => [
-        'text' => 'Book direct with us for our best rates',
-        'link' => '',
+        'text'       => 'Book direct with us for our best rates',
+        'link'       => '/enquire',
+        'link_words' => 'Book direct',
     ],
 
     // Shown on Google and when a page is shared, unless a page sets its own.
@@ -95,6 +97,25 @@ function is_current($link)
         return $path === '/';
     }
     return $path === $link || strpos($path, $link . '/') === 0;
+}
+
+/**
+ * The announcement bar's text, with its link on just the 'link_words'
+ * (or on the whole text if those words aren't found).
+ */
+function announcement_html($a)
+{
+    $text = e($a['text']);
+    if (($a['link'] ?? '') === '') {
+        return $text;
+    }
+    $open = '<a href="' . e($a['link']) . '"' . link_attrs($a['link']) . '>';
+    $words = e($a['link_words'] ?? '');
+    $at = ($words !== '') ? strpos($text, $words) : false;
+    if ($at === false) {
+        return $open . $text . '</a>';
+    }
+    return substr($text, 0, $at) . $open . $words . '</a>' . substr($text, $at + strlen($words));
 }
 
 /** Attributes for a link that may go to another website: those open in a new tab. */

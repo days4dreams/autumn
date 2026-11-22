@@ -17,16 +17,16 @@ Here's how we'd spend a weekend at Autumn House, with no alarm clocks required.
 
 ![Stools at the kitchen breakfast bar](/images/guide/breakfast-bar.jpg)
 
-Peel off your boots, pop the kettle on and pick up milk from the Nisa shop, less than a minute away.
+Peel off your boots, pop the kettle on and pick up milk from the handy, well-stocked corner shop, less than a minute away.
 
 For dinner, stroll into town to the Adam and Eve, a neighbourhood pub with modern European food built on seasonal, British ingredients.
 
 #### Saturday morning
 ## Wake *with* the house
 
-![The rocking chair by the window](/images/home/rocking-chair.jpg)
+![The armchair by the window](/images/home/rocking-chair.jpg)
 
-Start slowly with a coffee in the rocking chair, then wander to Barter Books, 400m away. It's one of the biggest second-hand bookshops in the country, set in an old railway station, with a café and an open fire.
+Start slowly with a coffee in the armchair, then wander to Barter Books, 400m away. It's one of the biggest second-hand bookshops in the country, set in an old railway station, with a café and an open fire.
 
 Pick up something tasty for later at Turnbulls of Alnwick, our local deli and butcher.
 

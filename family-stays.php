@@ -31,7 +31,7 @@ require __DIR__ . '/includes/head.php';
       </div>
     </div>
     <div class="media">
-      <div class="card-torn tilt-r"><div><?= content_image('/images/family/storage-boxes.jpg', 'Colourful storage boxes in the twin room', '', '4/5') ?><span class="hand">Toys &amp; treasures</span></div></div>
+      <div class="card-torn tilt-r"><div><?= content_image('/images/home/childrens-books.jpg', 'Paddington books in the twin room', '', '4/5') ?><span class="hand">Toys &amp; treasures</span></div></div>
     </div>
   </div>
 </section>

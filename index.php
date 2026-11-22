@@ -17,7 +17,7 @@ require __DIR__ . '/includes/head.php';
   <div class="wrap stack">
     <p class="hand">Welcome to Autumn House</p>
     <h1>A stone cottage <em>in the heart of</em> Alnwick</h1>
-    <p>Two bedrooms, room for four, and a short stroll to the castle, the gardens and Barter Books.</p>
+    <p>Room for four to stay and explore. Stroll to Alnwick Castle and Gardens from the door, or explore the best of Northumberland.</p>
     <div class="btns"><a class="btn btn--fill" href="<?= e($site['booking_url']) ?>"<?= link_attrs($site['booking_url']) ?>>Book your stay</a></div>
   </div>
 </section>
@@ -27,12 +27,12 @@ require __DIR__ . '/includes/head.php';
     <div class="stack">
       <p class="label">Your home from home</p>
       <h2>Peel off your walking boots, <em>pop the kettle on</em> and make yourself at home.</h2>
-      <p>Autumn House is a stone-built, two-bedroom cottage with a new kitchen and bathroom, a cosy living room, and a garden front and back. There's room for four to rest, play and explore.</p>
-      <p>Parking is free right outside, the local Nisa shop is a minute's walk away, and the town centre, with its cafés, pubs and restaurants, is about a ten-minute stroll.</p>
+      <p>Autumn House is a stone-built, two-bedroom cottage packed with family-friendly amenities, a cosy living room, and a garden front and back. There's room for four to rest, play and explore.</p>
+      <p>Parking is free right outside, and the town centre, with its cafés, pubs and restaurants, is about a ten-minute stroll.</p>
       <div class="btns"><a class="btn" href="/the-house">See the house</a></div>
     </div>
     <div class="media">
-      <div class="card-torn tilt-r"><div><?= content_image('/images/home/rocking-chair.jpg', 'A rocking chair and reading lamp in a corner of the sitting room', '', '4/5') ?><span class="hand">Read, rock, repeat</span></div></div>
+      <div class="card-torn tilt-r"><div><?= content_image('/images/home/rocking-chair.jpg', 'An armchair and reading lamp in a corner of the sitting room', '', '4/5') ?><span class="hand">Curl up with a good book</span></div></div>
       <?= svg('logos/stamp.svg', 'stamp') ?>
     </div>
   </div>
@@ -41,7 +41,7 @@ require __DIR__ . '/includes/head.php';
 <section class="band torn torn--flip" style="--band: var(--primary-light)">
   <div class="wrap features">
     <div><?= svg('illustrations/03-hare.svg', 'illustration') ?><h3 class="hand">On your doorstep</h3><p>Barter Books is 400m away, The Alnwick Garden 500m and Alnwick Castle 1.2km, all easy on foot.</p></div>
-    <div><?= svg('illustrations/01-oak-leaf.svg', 'illustration') ?><h3 class="hand">Cosy nights in</h3><p>A fireside rocking chair, board games, good books and a projector for film nights.</p></div>
+    <div><?= svg('illustrations/01-oak-leaf.svg', 'illustration') ?><h3 class="hand">Cosy nights in</h3><p>A fireside armchair, board games, good books and a projector for film nights.</p></div>
     <div><?= svg('illustrations/07-sprig-berries.svg', 'illustration') ?><h3 class="hand">Coast &amp; country</h3><p>The Northumberland coast is nine minutes' drive away, with Craster, Warkworth and Dunstanburgh within twenty.</p></div>
   </div>
 </section>
@@ -52,7 +52,7 @@ require __DIR__ . '/includes/head.php';
     <div class="cards">
       <article class="card">
         <?= content_image('/images/home/kitchen.jpg', 'The kitchen, with oak cupboards and terracotta tiles', '', '4/3') ?>
-        <div class="card-body"><h3>The House</h3><p>Two bedrooms, a bright new kitchen and bathroom, and a living room made for curling up.</p><a class="btn" href="/the-house">See the house</a></div>
+        <div class="card-body"><h3>The House</h3><p>Two bedrooms, a bright, modern kitchen and bathroom, and a living room made for curling up.</p><a class="btn" href="/the-house">See the house</a></div>
       </article>
       <article class="card">
         <?= content_image('/images/home/twin-room.jpg', 'The twin bedroom', '', '4/3') ?>
@@ -82,7 +82,7 @@ require __DIR__ . '/includes/head.php';
       <p class="label">Meet your hosts</p>
       <h2>We're Lauren and David, and <em>we'd love to welcome you.</em></h2>
       <p>Born and raised in the North East, we travelled the world and spent several years in New Zealand before coming home to Northumberland in 2024.</p>
-      <p>We look after Autumn House ourselves, from the bookings to the clean linen.</p>
+      <p>We look after Autumn House ourselves, from managing bookings to changing the beds.</p>
     </div>
   </div>
 </section>

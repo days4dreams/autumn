@@ -33,14 +33,14 @@ Yes, free Wi-Fi throughout the house. You'll find the details inside when you ar
 
 ### Can we bring the dog?
 show on: house, family
-Yes, well-behaved pets are welcome. There's a £30 pet fee per stay to cover the extra cleaning.
+Sorry, we don't normally allow pets, but [drop us a message](/enquire) and we'll see what we can do.
 
 ### Can we smoke or vape?
 Autumn House is non-smoking inside, but you're welcome to use the front or back garden.
 
 ### Where can we buy food?
 show on: house
-There's a Nisa shop less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Sainsbury's, M&S and Turnbulls are a three-minute drive away at Willowburn Retail Park, and there's an Aldi on South Road. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
+There's a handy, well-stocked corner shop less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Sainsbury's, M&S and Turnbulls are a three-minute drive away at Willowburn Retail Park, and there's an Aldi on South Road. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
 
 ## The House
 
@@ -90,7 +90,7 @@ Booking directly with us is our best rate: there are no platform fees, and you d
 
 ### How do payment and cancellation work?
 show on: enquire
-When you book direct, we take 30% when you book and the rest 14 days before you arrive. Cancel more than 14 days before your stay at no cost; after that, we keep the 30% deposit. Our [terms](/terms) have the full details.
+When you book direct, we take 50% when you book and the rest 14 days before you arrive. Cancel more than 21 days before your stay at no cost; after that, we keep the 50% paid at booking. Our [terms](/terms) have the full details.
 
 ### Is there a security deposit?
 show on: enquire

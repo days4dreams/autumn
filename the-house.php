@@ -4,7 +4,7 @@
  * The photo grid takes any number of photos: add a line to $housePhotos.
  */
 $title = 'The House';
-$description = 'Inside Autumn House: a two-bedroom stone cottage in Alnwick with a new kitchen and bathroom, a cosy living room and gardens front and back.';
+$description = 'Inside Autumn House: a two-bedroom stone cottage in Alnwick with a modern kitchen and bathroom, a cosy living room and gardens front and back.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 
@@ -14,7 +14,7 @@ $housePhotos = [
     ['/images/house/coffee-table.jpg', 'The coffee table and writing bureau in the sitting room'],
     ['/images/house/double-bed.jpg', 'The double bed with gingham bedding and green cushions'],
     ['/images/house/shower.jpg', 'The shower over the bath, with brass fittings and green tiles'],
-    ['/images/house/rocking-chair.jpg', 'The rocking chair in the evening lamplight'],
+    ['/images/house/rocking-chair.jpg', 'The armchair in the evening lamplight'],
     ['/images/house/kitchen-window.jpg', 'The kitchen sink under the window'],
     ['/images/house/dresser.jpg', 'The dresser in the double bedroom'],
     ['/images/house/towel-ladder.jpg', 'The towel ladder in the bathroom'],
@@ -33,8 +33,8 @@ $housePhotos = [
   <div class="split" style="gap: 0; align-items: stretch">
     <div class="stack wrap" style="padding-block: var(--band-space); max-width: 36rem; margin-inline: auto">
       <p class="label">The house</p>
-      <h2>A stone-built Alnwick cottage with <em>a brand new kitchen and bathroom</em>, two bedrooms and a garden front and back.</h2>
-      <p>In the living room, shelves of books and artwork flank the chimney breast. A vintage-inspired rocking chair sits by the hearth, and a wool blanket waits on the green velvet sofa for a good book and a hot drink.</p>
+      <h2>A stone-built Alnwick cottage with <em>a bright, modern kitchen and bathroom</em>, two bedrooms and a garden front and back.</h2>
+      <p>In the living room, shelves of books and artwork flank the chimney breast. A vintage-inspired armchair sits by the hearth, and a wool blanket waits on the green velvet sofa for a good book and a hot drink.</p>
       <p>Upstairs, the main bedroom has a double bed and built-in wardrobes; the second has two single beds. Both have reading lamps and blackout curtains.</p>
       <p>The bright kitchen has an induction hob, oven, microwave and washer-dryer, a breakfast bar with stools and a fold-away dining table. Downstairs, the bathroom has a bath with a shower over it and underfloor heating. Free Wi-Fi throughout.</p>
     </div>

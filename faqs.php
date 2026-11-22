@@ -4,7 +4,7 @@
  * the whole site); this page shows all of them, in their groups.
  */
 $title = 'FAQs';
-$description = 'Answers to common questions about staying at Autumn House in Alnwick: check-in, parking, the house, families, pets and booking direct.';
+$description = 'Answers to common questions about staying at Autumn House in Alnwick: check-in, parking, the house, families and booking direct.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>
