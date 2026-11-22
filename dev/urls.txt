@@ -2,6 +2,7 @@
 /faqs
 /the-guide
 /the-guide?category=local-area
+/the-guide/welcome-hampers
 /the-guide/a-slow-weekend
 /the-house
 /family-stays

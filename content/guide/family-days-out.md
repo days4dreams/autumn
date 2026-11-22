@@ -1,23 +1,29 @@
 ---
-title: Family days out lorem ipsum
+title: Family days out from Autumn House
 date: 2026-11-14
-category: news
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-image: /images/guide/double-bedroom.jpg
-image_alt: The double bedroom
+category: local-area
+summary: Castles, gardens, swimming and a bookshop with its own children's corner, all close to Autumn House.
+image: /images/home/childrens-books.jpg
+image_alt: Paddington books in the twin room
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Alnwick is wonderful for families, and so much of it is on foot from Autumn House. Here are our suggestions for keeping little ones busy.
 
-## Lorem *ipsum* dolor
+## Castles *and* gardens
 
 ![Paddington books in the twin room](/images/home/childrens-books.jpg)
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Alnwick Castle (1.2km) is where young Harry Potter fans come for broomstick lessons. Next door, The Alnwick Garden (500m) has spectacular water features, and Lilidorei, a magical play village, is a favourite with younger visitors.
 
-## Duis aute *irure*
+## Books *and* films
 
 ![A draughts set on the coffee table](/images/family/draughts.jpg)
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+You can't miss Barter Books, an enchanting second-hand bookshop and café a very short walk away, with a dedicated children's area. For a rainy afternoon, The Alnwick Playhouse is an independent cinema and theatre.
+
+## Swimming *and* fresh air
+
+Willowburn Leisure Centre, just round the corner, has children's swimming. When the sun's out, Hulne Park has easy, paved walks through fields and forest, and Alnmouth's beach is a short drive away.
+
+For more ideas, [North East Family Fun](https://www.northeastfamilyfun.co.uk/search?q=ALNWICK) is a great local blog.

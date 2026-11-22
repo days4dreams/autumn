@@ -19,7 +19,7 @@
       </div>
       <div class="footer-centre">
         <a href="/" class="footer-mark"><?= svg('logos/a-h-circle.svg', 'monogram', $site['name'] . ' home') ?></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <p>A two-bedroom stone cottage in Alnwick, Northumberland, looked after by Lauren and David.</p>
         <a class="btn btn--light" href="<?= e($site['booking_url']) ?>"<?= link_attrs($site['booking_url']) ?>>Book now</a>
       </div>
       <div>

@@ -18,7 +18,7 @@ $site = [
     'launched' => false,
 
     // Where the "Book now" buttons go. '#' until the booking link is ready.
-    'booking_url' => '#',
+    'booking_url' => 'https://autumn-house.amenitiz.io/en/booking/room#DatesGuests-BE', // the Amenitiz booking page (direct bookings)
 
     // Footer links still to come. '#' until they're ready.
     'staying_season_url' => '#',
@@ -33,12 +33,12 @@ $site = [
     // The thin bar across the very top of every page.
     // Leave 'text' empty ('') to switch it off. 'link' is optional.
     'announcement' => [
-        'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+        'text' => 'Book direct with us for our best rates',
         'link' => '',
     ],
 
     // Shown on Google and when a page is shared, unless a page sets its own.
-    'description'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    'description'   => 'Autumn House is a two-bedroom stone cottage in Alnwick, Northumberland, sleeping four. Book direct with your hosts, Lauren and David.',
     'default_image' => '/images/home/living-room-fire.jpg',
 ];
 

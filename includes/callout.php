@@ -3,8 +3,8 @@
  * "Ready to stay?" band with booking buttons. Used near the end of most pages.
  * A page can change the wording by setting $calloutLabel / $calloutText first.
  */
-$calloutLabel = $calloutLabel ?? 'Lorem ipsum dolor?';
-$calloutText  = $calloutText ?? 'Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em> sed do eiusmod.';
+$calloutLabel = $calloutLabel ?? 'Ready when you are';
+$calloutText  = $calloutText ?? 'Book direct with us for <em>our best rates</em> on your stay.';
 ?>
 <section class="band torn callout" style="--band: var(--shade)">
   <div class="wrap callout-inner">

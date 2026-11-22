@@ -75,8 +75,8 @@ if ($post !== null):
 </article>
 
 <?php
-    $calloutLabel = 'Lorem ipsum dolor sit amet';
-    $calloutText = 'If your idea of a good weekend is lorem ipsum, <em>Autumn House</em> is ready when you are.';
+    $calloutLabel = 'Fancy a weekend away?';
+    $calloutText = 'If your idea of a good weekend is a long walk and a cosy night in, <em>Autumn House</em> is ready when you are.';
     include __DIR__ . '/includes/callout.php';
     include __DIR__ . '/includes/footer.php';
     return;
@@ -93,7 +93,7 @@ if (!isset($guideCategories[$category])) {
 $posts = ($category !== '') ? guide_posts_in($category) : guide_posts();
 
 $title = ($category !== '') ? $guideCategories[$category] . ' | The Guide' : 'The Guide';
-$description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.';
+$description = 'Our guide to Alnwick and Northumberland: where to eat, where to walk, family days out and news from Autumn House.';
 $overPhoto = true;
 require __DIR__ . '/includes/head.php';
 ?>
@@ -102,8 +102,8 @@ require __DIR__ . '/includes/head.php';
   <?= content_image('/images/home/coffee-table.jpg', 'Books on the coffee table in the sitting room', 'band-photo', '') ?>
   <div class="shade-over"></div>
   <div class="wrap stack centre">
-    <h1>Lorem ipsum <em>guide</em></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h1>The Autumn House <em>Guide</em></h1>
+    <p>Our favourite places to eat, walk and explore in and around Alnwick, from two locals who love it here.</p>
   </div>
 </section>
 

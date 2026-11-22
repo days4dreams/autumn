@@ -4,7 +4,7 @@
  * The photo grid takes any number of photos: add a line to $housePhotos.
  */
 $title = 'The House';
-$description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.';
+$description = 'Inside Autumn House: a two-bedroom stone cottage in Alnwick with a new kitchen and bathroom, a cosy living room and gardens front and back.';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 
@@ -26,17 +26,17 @@ $housePhotos = [
 ?>
 
 <header class="wrap page-head centre-text">
-  <h1>Lorem ipsum, <em>dolor</em> &amp; sit amet</h1>
+  <h1>Stone walls, <em>warm</em> &amp; welcoming rooms</h1>
 </header>
 
 <section class="band band--tight" style="--band: var(--primary-light); padding-block: 0">
   <div class="split" style="gap: 0; align-items: stretch">
     <div class="stack wrap" style="padding-block: var(--band-space); max-width: 36rem; margin-inline: auto">
-      <p class="label">Lorem ipsum</p>
-      <h2>The main lorem ipsum spans the dolor and sit amet, with <em>consectetur</em> adipiscing elit.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="label">The house</p>
+      <h2>A stone-built Alnwick cottage with <em>a brand new kitchen and bathroom</em>, two bedrooms and a garden front and back.</h2>
+      <p>In the living room, shelves of books and artwork flank the chimney breast. A vintage Parker Knoll rocking chair waits by the hearth, and a wool blanket waits on the sofa for a good book and a hot drink.</p>
+      <p>Upstairs, the main bedroom has a double bed and built-in wardrobes; the second has two single beds. Both have reading lamps and blackout curtains.</p>
+      <p>The bright kitchen has an induction hob, oven, microwave and washer-dryer, and the bathroom has a bath with a shower over it and underfloor heating. Free Wi-Fi throughout.</p>
     </div>
     <?= content_image('/images/house/sitting-room-alcove.jpg', 'An alcove in the sitting room with a writing bureau and shelves', '', '') ?>
   </div>
@@ -55,7 +55,7 @@ $housePhotos = [
   <div class="wrap split" style="align-items: start">
     <div class="stack">
       <p class="label">Good to know</p>
-      <h2>Lorem ipsum <em>dolor</em> sit amet</h2>
+      <h2>Questions about <em>the house</em></h2>
       <p><a href="/faqs">See all FAQs</a></p>
     </div>
     <?= $houseFaqs ?>
