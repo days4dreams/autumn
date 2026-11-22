@@ -28,7 +28,7 @@ require __DIR__ . '/includes/head.php';
       <p class="label">Your home from home</p>
       <h2>Peel off your walking boots, <em>pop the kettle on</em> and make yourself at home.</h2>
       <p>Autumn House is a stone-built, two-bedroom cottage with a new kitchen and bathroom, a cosy living room, and a garden front and back. There's room for four to rest, play and explore.</p>
-      <p>Parking is free right outside, the Co-op is a minute's walk away, and the town centre, with its cafés, pubs and restaurants, is about a ten-minute stroll.</p>
+      <p>Parking is free right outside, the local Nisa shop is a minute's walk away, and the town centre, with its cafés, pubs and restaurants, is about a ten-minute stroll.</p>
       <div class="btns"><a class="btn" href="/the-house">See the house</a></div>
     </div>
     <div class="media">

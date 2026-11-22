@@ -17,7 +17,7 @@ Here's how we'd spend a weekend at Autumn House, with no alarm clocks required.
 
 ![Stools at the kitchen breakfast bar](/images/guide/breakfast-bar.jpg)
 
-Peel off your boots, pop the kettle on and pick up milk from the Co-op, less than a minute away.
+Peel off your boots, pop the kettle on and pick up milk from the Nisa shop, less than a minute away.
 
 For dinner, stroll into town to the Adam and Eve, a neighbourhood pub with modern European food built on seasonal, British ingredients.
 

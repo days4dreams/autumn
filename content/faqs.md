@@ -40,7 +40,7 @@ Autumn House is non-smoking inside, but you're welcome to use the front or back 
 
 ### Where can we buy food?
 show on: house
-There's a Co-op less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Sainsbury's, M&S and Turnbulls are a three-minute drive away at Willowburn Retail Park, and there's an Aldi on South Road. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
+There's a Nisa shop less than a minute's walk from the front door, so rather than leave milk that might go to waste, we let you choose your favourite there. Sainsbury's, M&S and Turnbulls are a three-minute drive away at Willowburn Retail Park, and there's an Aldi on South Road. Our [guide to eating out](/the-guide/where-to-eat-in-alnwick) has our favourite cafés, pubs and restaurants.
 
 ## The House
 
