@@ -24,7 +24,7 @@ require __DIR__ . '/includes/head.php';
     <div class="stack">
       <p class="label">Made for little adventurers</p>
       <h2>Autumn House is a cosy base for families, made for holidays that feel <em>easy, cosy and close to home.</em></h2>
-      <p>There's a travel cot, children's tableware, books and board games, and a bath for muddy knees at the end of the day. The castle, The Alnwick Garden and Barter Books are all within walking distance.</p>
+      <p>There's a travel cot, highchair and baby bath, children's tableware, and books and games for every age, from babies to ten-plus. The castle, The Alnwick Garden and Barter Books are all within walking distance.</p>
       <div class="btns">
         <a class="btn btn--fill" href="<?= e($site['booking_url']) ?>"<?= link_attrs($site['booking_url']) ?>>Book your stay</a>
         <a class="btn" href="/the-house">See the house</a>
@@ -57,12 +57,14 @@ require __DIR__ . '/includes/head.php';
   <div class="wrap stack" style="gap: 3rem">
     <h2 class="centre-text">Why families <em>love</em> Autumn House</h2>
     <div class="features">
-      <div><?= svg('illustrations/10-seedling.svg', 'illustration') ?><h3 class="hand">Room for four</h3><p>A double room and a twin room, plus a travel cot and mattress for the littlest guests.</p></div>
+      <div><?= svg('illustrations/10-seedling.svg', 'illustration') ?><h3 class="hand">Room for four</h3><p>A double room and a twin room, plus a travel cot, highchair and baby bath for the littlest guests.</p></div>
       <div><?= svg('illustrations/04-flower.svg', 'illustration') ?><h3 class="hand">Everything to hand</h3><p>Children's tableware, books, board games and a washer-dryer for muddy clothes.</p></div>
       <div><?= svg('illustrations/09-sprig-small.svg', 'illustration') ?><h3 class="hand">Days out nearby</h3><p>The Alnwick Garden, the castle, the Playhouse cinema and the beach at Alnmouth.</p></div>
     </div>
   </div>
 </section>
+
+<?php $review = 'family'; include __DIR__ . '/includes/review.php'; ?>
 
 <?php $familyFaqs = faq_list('family'); if ($familyFaqs !== ''): ?>
 <section class="band torn" style="--band: var(--primary-light); padding-block: 0">

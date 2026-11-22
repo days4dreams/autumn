@@ -64,15 +64,19 @@ A small front garden with a picket fence, and a paved back yard with potted plan
 show on: family
 Plenty. There's a projector for streaming films and shows, board games, books and a Bluetooth speaker in the living room.
 
+### Where is the bathroom?
+show on: house, family
+The bathroom is on the ground floor, and both bedrooms are upstairs. It's an old cottage, so the stairs can be a little creaky at night.
+
 ## Families
 
-### Do you have a travel cot?
+### Do you have a travel cot and highchair?
 show on: family
-Yes, there's a travel cot and mattress in the tall cupboard in the main bedroom.
+Yes. There's a travel cot with a mattress and sheets, a highchair with a tray, and a baby bath.
 
 ### Is Autumn House good for children?
 show on: family
-We think so. There's children's tableware, books and games, a bath for bedtime, and the castle, The Alnwick Garden and Barter Books are all within walking distance.
+We think so. There's children's tableware, books and toys for every age from babies to ten-plus, board games, a bath for bedtime, and the castle, The Alnwick Garden and Barter Books are all within walking distance.
 
 ### What is there for children nearby?
 show on: family

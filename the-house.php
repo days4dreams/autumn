@@ -34,9 +34,9 @@ $housePhotos = [
     <div class="stack wrap" style="padding-block: var(--band-space); max-width: 36rem; margin-inline: auto">
       <p class="label">The house</p>
       <h2>A stone-built Alnwick cottage with <em>a brand new kitchen and bathroom</em>, two bedrooms and a garden front and back.</h2>
-      <p>In the living room, shelves of books and artwork flank the chimney breast. A vintage Parker Knoll rocking chair waits by the hearth, and a wool blanket waits on the sofa for a good book and a hot drink.</p>
+      <p>In the living room, shelves of books and artwork flank the chimney breast. A vintage-inspired rocking chair sits by the hearth, and a wool blanket waits on the green velvet sofa for a good book and a hot drink.</p>
       <p>Upstairs, the main bedroom has a double bed and built-in wardrobes; the second has two single beds. Both have reading lamps and blackout curtains.</p>
-      <p>The bright kitchen has an induction hob, oven, microwave and washer-dryer, and the bathroom has a bath with a shower over it and underfloor heating. Free Wi-Fi throughout.</p>
+      <p>The bright kitchen has an induction hob, oven, microwave and washer-dryer, a breakfast bar with stools and a fold-away dining table. Downstairs, the bathroom has a bath with a shower over it and underfloor heating. Free Wi-Fi throughout.</p>
     </div>
     <?= content_image('/images/house/sitting-room-alcove.jpg', 'An alcove in the sitting room with a writing bureau and shelves', '', '') ?>
   </div>

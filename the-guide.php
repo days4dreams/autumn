@@ -133,6 +133,6 @@ require __DIR__ . '/includes/head.php';
   </div>
 </section>
 
-<?php include __DIR__ . '/includes/review.php'; ?>
+<?php $review = 'guide'; include __DIR__ . '/includes/review.php'; ?>
 <?php include __DIR__ . '/includes/callout.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
