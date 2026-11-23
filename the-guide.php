@@ -23,6 +23,7 @@ if ($post !== null):
     $description = $post['summary'];
     if (preg_match('#^/images/#', $post['image']) && is_file(__DIR__ . $post['image'])) {
         $ogImage = $post['image'];
+        $ogImageAlt = $post['image_alt'];
     }
     $parts = guide_post_parts($post['body']);
     require __DIR__ . '/includes/head.php';
@@ -92,7 +93,9 @@ if (!isset($guideCategories[$category])) {
 }
 $posts = ($category !== '') ? guide_posts_in($category) : guide_posts();
 
-$title = ($category !== '') ? $guideCategories[$category] . ' | The Guide' : 'The Guide';
+$ogImage = '/images/home/coffee-table.jpg';
+$ogImageAlt = 'Books on the coffee table in the sitting room';
+$title = ($category !== '') ? $guideCategories[$category] . ' | The Guide' : 'The Guide: things to do in Alnwick';
 $description = 'Our guide to Alnwick and Northumberland: where to eat, where to walk, family days out and news from Autumn House.';
 $overPhoto = true;
 require __DIR__ . '/includes/head.php';

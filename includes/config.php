@@ -10,12 +10,14 @@
 $site = [
     'name'     => 'Autumn House',
     'tagline'  => 'by Staying Season',
+    // The homepage's title in Google and browser tabs (after the name).
+    'home_title' => 'Holiday cottage in Alnwick, Northumberland',
     'url'      => 'https://autumn.greensmokestudio.com', // no trailing slash
     'year'     => date('Y'), // updates itself every January
 
     // false while the site still has placeholder text: Google is asked not
     // to list it. Change to true on launch day.
-    'launched' => false,
+    'launched' => true,
 
     // Where the "Book now" buttons go. '#' until the booking link is ready.
     'booking_url' => '/enquire', // Book now buttons; change to the booking page once direct booking is set up
@@ -26,6 +28,20 @@ $site = [
     // The Enquire form's emails come "from" this address (replies go to the guest).
     // An address on greensmokestudio.com is less likely to land in spam.
     'mail_from' => 'noreply@greensmokestudio.com',
+
+    // Shown to Google in the structured data (includes/structured-data.php).
+    'address' => [
+        'street'   => 'Victoria Terrace',
+        'town'     => 'Alnwick',
+        'county'   => 'Northumberland',
+        'postcode' => 'NE66 1RE',
+        'country'  => 'GB',
+    ],
+    // Other places Autumn House is listed (Google Business Profile, Airbnb…).
+    // Add each address here; Google uses them to connect the listings.
+    'also_listed_at' => [
+        'https://www.instagram.com/atstayingseason/',
+    ],
 
     'instagram_url'    => 'https://www.instagram.com/atstayingseason/',
     'instagram_handle' => '@atstayingseason',

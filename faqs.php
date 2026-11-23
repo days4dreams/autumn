@@ -5,6 +5,8 @@
  */
 $title = 'FAQs';
 $description = 'Answers to common questions about staying at Autumn House in Alnwick: check-in, parking, the house, families and booking direct.';
+$ogImage = '/images/home/coffee-table.jpg';
+$ogImageAlt = 'Books on the coffee table in the sitting room';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>

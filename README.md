@@ -75,6 +75,20 @@ can never touch greensmokestudio.com.
 **Rolling back:** Actions tab → *Deploy to Krystal* → *Run workflow*, and paste
 the commit ID of the version you want live.
 
+## Launch day checklist
+
+1. In `includes/config.php`, change `'launched' => false` to `true`
+   (this lets Google list the site), commit and merge.
+2. In Google Search Console (search.google.com/search-console), add the
+   property `https://autumn.greensmokestudio.com`, verify it (the HTML tag
+   method: send Claude the tag and it goes in `includes/head.php`), then
+   submit the sitemap: `https://autumn.greensmokestudio.com/sitemap.xml`.
+3. Test the homepage at https://search.google.com/test/rich-results
+   (it should find a "Local business" / lodging item).
+4. Paste a page link into WhatsApp or Facebook to check the preview photo.
+5. When the Google Business Profile is live, add its link to
+   `also_listed_at` in `includes/config.php` (and the website link to the profile).
+
 ## Making Winter's Nook or Spring Hideaway
 
 Copy this repository, then:
