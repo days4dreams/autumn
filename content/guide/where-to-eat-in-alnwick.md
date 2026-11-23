@@ -3,8 +3,8 @@ title: Where to eat in and around Alnwick
 date: 2026-11-18
 category: local-area
 summary: Our favourite places to eat, from treetop dinners to beachside pizza and a slice of something sweet.
-image: /images/house/kitchen.jpg
-image_alt: The kitchen at Autumn House
+image: /images/guide/cafe-cup.jpg
+image_alt: A cup of tea on a wooden café table
 draft: false
 ---
 
@@ -12,7 +12,7 @@ There's plenty to eat within a ten-minute walk of Autumn House, and even more a 
 
 ## Something *special*
 
-![The kitchen sink under the window](/images/house/kitchen-window.jpg)
+![The Treehouse Restaurant among the trees at The Alnwick Garden](/images/guide/treehouse-restaurant.jpg)
 
 **The Treehouse Restaurant, The Alnwick Garden.** Dine under the woodland canopy among twinkling lights, or by the log fire when the weather suits. The menu is modern British, built on seasonal produce.
 
@@ -26,7 +26,7 @@ There's plenty to eat within a ten-minute walk of Autumn House, and even more a 
 
 ## Further *afield*
 
-![Stools at the kitchen breakfast bar](/images/guide/breakfast-bar.jpg)
+![A pizza in a wood-fired oven](/images/guide/wood-fired-pizza.jpg)
 
 **Embers, Embleton.** A casual beachside hut serving wood-fired pizzas, perfect for sunset dinners. It's seasonal, so check opening times.
 

@@ -24,20 +24,20 @@ For dinner, stroll into town to the Adam and Eve, a neighbourhood pub with moder
 #### Saturday morning
 ## Wake *with* the house
 
-![The armchair by the window](/images/home/rocking-chair.jpg)
+![Inside Barter Books, the bookshop in Alnwick's old railway station](/images/guide/barter-books.jpg)
 
 Start slowly with a coffee in the armchair, then wander to Barter Books, 400m away. It's one of the biggest second-hand bookshops in the country, set in an old railway station, with a café and an open fire.
 
 Pick up something tasty for later at Turnbulls of Alnwick, our local deli and butcher.
 
 ![Autumn stems in a glass vase](/images/guide/autumn-stems.jpg)
-![Yellow leaves against a pink wall](/images/guide/yellow-leaves.jpg)
+![Jars of homemade jam](/images/guide/jam-jars.jpg)
 ![Cushions on the double bed](/images/guide/cushions.jpg)
 
 #### Saturday afternoon
 ## Choose *your* pace
 
-![The reading corner in the evening](/images/home/reading-corner-evening.jpg)
+![Roses in The Alnwick Garden](/images/guide/garden-roses.jpg)
 
 Explore The Alnwick Garden, 500m away, with its water features, cherry orchard and rose gardens, or head out on the paths of Hulne Park (check opening times first).
 
