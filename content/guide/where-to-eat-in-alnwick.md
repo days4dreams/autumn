@@ -3,8 +3,8 @@ title: Where to eat in and around Alnwick
 date: 2026-11-18
 category: local-area
 summary: Our favourite places to eat, from treetop dinners to beachside pizza and a slice of something sweet.
-image: /images/house/kitchen.jpg
-image_alt: The kitchen at Autumn House
+image: /images/guide/cafe-cup.jpg
+image_alt: A cup of tea on a wooden café table
 draft: false
 ---
 
@@ -12,7 +12,7 @@ There's plenty to eat within a ten-minute walk of Autumn House, and even more a 
 
 ## Something *special*
 
-![The kitchen sink under the window](/images/house/kitchen-window.jpg)
+![The Treehouse Restaurant at The Alnwick Garden](/images/guide/treehouse-restaurant.jpg)
 
 **The Treehouse Restaurant, The Alnwick Garden.** Dine under the woodland canopy among twinkling lights, or by the log fire when the weather suits. The menu is modern British, built on seasonal produce.
 
