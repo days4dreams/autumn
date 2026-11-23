@@ -24,6 +24,10 @@ $housePhotos = [
     ['/images/house/pressed-flowers.jpg', 'Pressed flowers in a gold frame'],
     ['/images/house/stairs.jpg', 'The painted green stairs'],
     ['/images/house/cushions.jpg', 'Cushions on the double bed'],
+    ['/images/home/twin-room.jpg', 'The twin bedroom, with two single beds'],
+    ['/images/family/storage-boxes.jpg', 'Colourful storage boxes in the twin bedroom'],
+    ['/images/family/twin-room-doorway.jpg', 'The twin bedroom, seen through the doorway'],
+    ['/images/house/twin-room-lamp.jpg', 'A bedside lamp and Paddington books in the twin bedroom'],
 ];
 ?>
 
