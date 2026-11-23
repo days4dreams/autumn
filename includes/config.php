@@ -20,7 +20,7 @@ $site = [
     'launched' => true,
 
     // Where the "Book now" buttons go. '#' until the booking link is ready.
-    'booking_url' => '/enquire', // Book now buttons; change to the booking page once direct booking is set up
+    'booking_url' => 'https://autumn-house.amenitiz.io/booking/autumn-house/room', // Book now buttons: the Amenitiz booking page (direct bookings)
 
     // Footer links still to come. '#' until they're ready.
     'staying_season_url' => '#',
@@ -51,7 +51,7 @@ $site = [
     // 'link_words' are the words in 'text' that become the link.
     'announcement' => [
         'text'       => 'Book direct with us for our best rates',
-        'link'       => '/enquire',
+        'link'       => 'https://autumn-house.amenitiz.io/booking/autumn-house/room',
         'link_words' => 'Book direct',
     ],
 
