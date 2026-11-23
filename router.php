@@ -20,6 +20,11 @@ if (preg_match('#^/(includes|content|dev)(/|$)#', $path) || preg_match('#/\.#', 
     return true;
 }
 
+// Google Search Console's verification file is served as it is (same as .htaccess).
+if (preg_match('#^/google[0-9a-f]+\.html$#', $path) && is_file($root . $path)) {
+    return false;
+}
+
 // Old addresses ending in .html or .php redirect to the clean address.
 if (preg_match('#^/(.+?)\.(html|php)$#', $path, $m) && $path !== '/router.php') {
     header('Location: ' . (($m[1] === 'index') ? '/' : '/' . $m[1]), true, 301);

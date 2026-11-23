@@ -30,6 +30,7 @@ check() { # url, expected status
 while read -r url; do [ -n "$url" ] && check "$url" 200; done < dev/urls.txt
 check /sitemap.xml 200
 check /robots.txt 200
+check /google05f54d7bc237a842.html 200   # Search Console verification
 check /this-page-does-not-exist 404
 check /the-guide/no-such-post 404
 check /includes/config.php 404   # private folders stay private

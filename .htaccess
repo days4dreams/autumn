@@ -22,6 +22,9 @@ RewriteRule ^(includes|content|dev)(/|$) - [R=404,L]
 # The 404 page (it sends a real "not found" status).
 ErrorDocument 404 /404.php
 
+# Google Search Console's verification file is served as it is (no redirect).
+RewriteRule ^google[0-9a-f]+\.html$ - [L]
+
 # Old-style addresses (/faqs.php, /index.php) redirect to the clean address
 # (/faqs, /). THE_REQUEST is what the visitor typed, so this doesn't loop
 # with the internal rewrite further down.
