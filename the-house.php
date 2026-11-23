@@ -4,7 +4,7 @@
  * The photo grid takes any number of photos: add a line to $housePhotos.
  */
 $title = 'The House: a two-bedroom cottage in Alnwick';
-$description = 'Inside Autumn House: a two-bedroom stone cottage in Alnwick with a modern kitchen and bathroom, a cosy living room and gardens front and back.';
+$description = 'A two-bedroom holiday cottage in Alnwick, a short walk from Alnwick Castle and The Alnwick Garden, with a modern kitchen and bathroom and gardens front and back.';
 $ogImage = '/images/house/kitchen.jpg';
 $ogImageAlt = 'The kitchen at Autumn House';
 require __DIR__ . '/includes/content.php';
