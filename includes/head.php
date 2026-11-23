@@ -8,14 +8,16 @@
  *   $description  One or two sentences for Google and social media (about 150 characters)
  *   $overPhoto    true when the page opens with a full-width photo: the header
  *                 then sits on top of the photo in light colours
- *   $ogImage      Optional. Image for social media shares, e.g. "/images/my-photo.jpg"
+ *   $ogImage      Optional. Image for social media shares, e.g. "/images/home/kitchen.jpg"
+ *   $ogImageAlt   Optional. A description of that image
  */
 require_once __DIR__ . '/config.php';
 
-$fullTitle   = (isset($title) && $title !== '') ? $title . ' | ' . $site['name'] : $site['name'] . ' ' . $site['tagline'];
+$fullTitle   = (isset($title) && $title !== '') ? $title . ' | ' . $site['name'] : $site['name'] . ' | ' . $site['home_title'];
 $description = $description ?? $site['description'];
 $canonical   = $site['url'] . (current_path() === '/' ? '/' : current_path());
 $shareImage  = $site['url'] . ($ogImage ?? $site['default_image']);
+$shareImageAlt = $ogImageAlt ?? 'The sitting room at Autumn House, with the stove lit';
 $overPhoto   = !empty($overPhoto);
 // Adding ?v= and the file's date makes browsers fetch the stylesheet again after each change.
 $cssVersion  = @filemtime(__DIR__ . '/../css/style.css') ?: 1;
@@ -36,12 +38,21 @@ $cssVersion  = @filemtime(__DIR__ . '/../css/style.css') ?: 1;
   <meta property="og:title" content="<?= e($fullTitle) ?>">
   <meta property="og:description" content="<?= e($description) ?>">
   <meta property="og:url" content="<?= e($canonical) ?>">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:image" content="<?= e($shareImage) ?>">
+  <meta property="og:image:alt" content="<?= e($shareImageAlt) ?>">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?= e($fullTitle) ?>">
+  <meta name="twitter:description" content="<?= e($description) ?>">
+  <meta name="twitter:image" content="<?= e($shareImage) ?>">
   <link rel="preload" href="/fonts/baskervville.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css?v=<?= e($cssVersion) ?>">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#2B1800">
+<?php if (current_path() === '/') { include __DIR__ . '/structured-data.php'; } ?>
   <script src="/js/site.js" defer></script>
 </head>
 <body<?= $overPhoto ? ' class="over-photo"' : '' ?>>

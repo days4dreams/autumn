@@ -3,8 +3,10 @@
  * Family Stays. Wording is written straight in below: edit it here.
  * The questions near the bottom come from content/faqs.md (those marked "show on: family").
  */
-$title = 'Family Stays';
+$title = 'Family-friendly cottage in Alnwick';
 $description = 'Family holidays in Alnwick: a two-bedroom cottage sleeping four, with a travel cot, games and books, close to the castle, gardens and coast.';
+$ogImage = '/images/family/double-bedroom.jpg';
+$ogImageAlt = 'The double bedroom with gingham bedding';
 $overPhoto = true;
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';

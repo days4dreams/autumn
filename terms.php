@@ -5,6 +5,8 @@
  */
 $title = 'Terms';
 $description = 'Booking terms for Autumn House: check-in times, payment, cancellations, deposits and house rules.';
+$ogImage = '/images/home/living-room-fire.jpg';
+$ogImageAlt = 'The sitting room at Autumn House, with the stove lit';
 require __DIR__ . '/includes/content.php';
 require __DIR__ . '/includes/head.php';
 ?>

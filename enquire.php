@@ -6,8 +6,10 @@
  * the server by the publishing workflow, so the address isn't in the code).
  * The form's wording and choices are written straight in below: edit them here.
  */
-$title = 'Enquire';
+$title = 'Enquire about your stay';
 $description = 'Get in touch with Lauren and David about staying at Autumn House in Alnwick: dates, family stays, hampers and special occasions.';
+$ogImage = '/images/house/kitchen-window.jpg';
+$ogImageAlt = 'The kitchen window at Autumn House';
 $overPhoto = true;
 require __DIR__ . '/includes/content.php';
 
