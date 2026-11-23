@@ -12,13 +12,13 @@ You don't need to go far for a good walk from Autumn House. Here are some of our
 
 ## Hulne *Park*
 
-![The painted green staircase](/images/instagram/green-stairs.jpg)
+![The river winding through Hulne Park](/images/guide/hulne-park.jpg)
 
 Part of the Duke of Northumberland's estate, right on the edge of town. A series of marked, paved paths takes you through fields, forest and along the river. It's popular with families. Check opening times before you go.
 
 ## Craster to *Dunstanburgh*
 
-![The painted green stairs](/images/house/stairs.jpg)
+![A dry-stone wall on the coast path](/images/guide/coastal-wall.jpg)
 
 Drive 12km to Craster, famous for its kippers, then follow the clifftop path to the dramatic ruins of Dunstanburgh Castle. Come back for lunch in the village.
 
