@@ -165,7 +165,10 @@ p { margin: 0; }
 .footer-centre p { font-size: 1rem; }
 .monogram { width: 92px; height: auto; fill: currentColor; }
 .footer-mark { line-height: 0; }
-.footer-base { margin-top: 3.2rem; padding-top: 1.4rem; border-top: 1px solid rgba(235, 228, 212, .3); font: 400 .8rem var(--sans); }
+.footer-base { margin-top: 3.2rem; padding-top: 1.4rem; border-top: 1px solid rgba(235, 228, 212, .3); font: 400 .8rem var(--sans);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1.5rem; }
+.footer-base a { text-decoration: none; opacity: .8; }
+.footer-base a:hover { text-decoration: underline; opacity: 1; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } .footer-centre { order: -1; margin-inline: auto; } }
 
 /* Instagram row: six photos with the handle on top */
@@ -258,6 +261,13 @@ p { margin: 0; }
 .review-card blockquote::before { content: "\201C"; left: -.15em; top: -.2em; transform: translateX(-100%); }
 .review-card blockquote::after { content: "\201D"; right: -.55em; bottom: -.75em; }
 .review-card figcaption { font: 400 1.3rem var(--serif); padding-right: .5rem; }
+/* Star ratings from the booking sites, under the review */
+.ratings { list-style: none; margin: 3rem 0 0 auto; padding: 1.4rem 0 0; max-width: 31rem; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 1.2rem 2.4rem;
+  border-top: 1px solid rgba(235, 228, 212, .35); }
+.ratings li { display: flex; align-items: center; gap: .7rem; }
+.ratings-score { font: 400 2.2rem/1 var(--serif); color: var(--tertiary); }
+.ratings-detail { font: 400 .75rem/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; }
+@media (max-width: 760px) { .ratings { justify-content: flex-start; margin-left: 0; } }
 @media (max-width: 760px) {
   .review-card blockquote { padding-left: 2.6rem; padding-right: 1.4rem; }
   .review-card blockquote::before { left: 0; transform: none; }
@@ -354,4 +364,27 @@ p { margin: 0; }
   .post-section--flip .post-photo { order: 0; }
 }
 
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+/* ---------- Gentle motion ----------
+   The hero words rise in as the page opens, and sections fade up as you
+   scroll to them. js/site.js adds .reveal only to things below the
+   first screen, so nothing is ever hidden if the script doesn't run.
+   Visitors who ask their device for less motion see none of it. */
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero .stack > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) both; }
+.hero .stack > :nth-child(2) { animation-delay: .12s; }
+.hero .stack > :nth-child(3) { animation-delay: .24s; }
+.hero .stack > :nth-child(4) { animation-delay: .36s; }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .7, .2, 1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+/* Photo cards straighten a little when you point at them */
+.card-torn { transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+.card-torn:hover { transform: rotate(0deg) scale(1.01); }
+.post-card .photo, .card .photo { transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.post-card:hover .photo { transform: scale(1.03); }
+.post-card, .card { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

@@ -43,6 +43,17 @@ $site = [
         'https://www.instagram.com/atstayingseason/',
     ],
 
+    // Guest ratings shown under the reviews. Update them now and then
+    // (and the 'as_of' month, which is shown beside them).
+    'ratings' => [
+        ['site' => 'Airbnb', 'score' => '4.85', 'out_of' => '5', 'count' => 88],
+        ['site' => 'Booking.com', 'score' => '9.5', 'out_of' => '10', 'count' => 27],
+    ],
+    'ratings_as_of' => 'November 2026',
+
+    // The small credit at the bottom of every page.
+    'credit' => ['text' => 'Site by Green Smoke Studio', 'url' => 'https://www.greensmokestudio.com/'],
+
     'instagram_url'    => 'https://www.instagram.com/atstayingseason/',
     'instagram_handle' => '@atstayingseason',
 

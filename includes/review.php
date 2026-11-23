@@ -34,5 +34,12 @@ $shown = $reviews[$review ?? 'home'] ?? reset($reviews);
       <blockquote><?= $shown['text'] /* may contain <em> for italics */ ?></blockquote>
       <figcaption>&ndash; <?= e($shown['name']) ?></figcaption>
     </figure>
+<?php if (!empty($site['ratings'])): ?>
+    <ul class="ratings" aria-label="Guest ratings, <?= e($site['ratings_as_of']) ?>">
+<?php foreach ($site['ratings'] as $r): ?>
+      <li><span class="ratings-score"><?= e($r['score']) ?></span><span class="ratings-detail">out of <?= e($r['out_of']) ?> on <?= e($r['site']) ?><br><?= e($r['count']) ?> reviews</span></li>
+<?php endforeach; ?>
+    </ul>
+<?php endif; ?>
   </div>
 </section>
