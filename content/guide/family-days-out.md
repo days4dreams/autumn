@@ -24,6 +24,8 @@ You can't miss Barter Books, an enchanting second-hand bookshop and café a very
 
 ## Swimming *and* fresh air
 
+![Children exploring a garden path](/images/guide/children-in-garden.jpg)
+
 Willowburn Leisure Centre, just round the corner, has children's swimming. When the sun's out, Hulne Park has easy, paved walks through fields and forest, and Alnmouth's beach is a short drive away.
 
 For more ideas, [North East Family Fun](https://www.northeastfamilyfun.co.uk/search?q=ALNWICK) is a great local blog.
