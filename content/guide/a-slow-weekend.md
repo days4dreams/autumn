@@ -24,7 +24,7 @@ For dinner, stroll into town to the Adam and Eve, a neighbourhood pub with moder
 #### Saturday morning
 ## Wake *with* the house
 
-![The armchair by the window](/images/home/rocking-chair.jpg)
+![Inside Barter Books, the bookshop in Alnwick's old railway station](/images/guide/barter-books.jpg)
 
 Start slowly with a coffee in the armchair, then wander to Barter Books, 400m away. It's one of the biggest second-hand bookshops in the country, set in an old railway station, with a café and an open fire.
 
