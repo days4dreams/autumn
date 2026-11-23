@@ -12,7 +12,7 @@ There's plenty to eat within a ten-minute walk of Autumn House, and even more a 
 
 ## Something *special*
 
-![The kitchen sink under the window](/images/house/kitchen-window.jpg)
+![The Treehouse Restaurant among the trees at The Alnwick Garden](/images/guide/treehouse-restaurant.jpg)
 
 **The Treehouse Restaurant, The Alnwick Garden.** Dine under the woodland canopy among twinkling lights, or by the log fire when the weather suits. The menu is modern British, built on seasonal produce.
 
