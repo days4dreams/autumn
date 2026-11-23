@@ -31,7 +31,10 @@
         </ul>
       </div>
     </div>
-    <p class="footer-base">&copy; <?= e($site['name']) ?> <?= e($site['year']) ?></p>
+    <div class="footer-base">
+      <p>&copy; <?= e($site['name']) ?> <?= e($site['year']) ?></p>
+      <p><a href="<?= e($site['credit']['url']) ?>"<?= link_attrs($site['credit']['url']) ?>><?= e($site['credit']['text']) ?></a></p>
+    </div>
   </div>
 </footer>
 </body>
