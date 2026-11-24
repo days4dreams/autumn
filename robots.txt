@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autumn.greensmokestudio.com/sitemap.xml
+Sitemap: https://autumn.stayingseason.com/sitemap.xml

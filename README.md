@@ -1,7 +1,7 @@
 # Autumn House
 
 The website for Autumn House, by Staying Season, at
-**https://autumn.greensmokestudio.com**.
+**https://autumn.stayingseason.com**.
 
 Plain PHP and HTML: no database, no framework. Fonts and scripts are self-hosted.
 
@@ -62,14 +62,14 @@ checked. You'll see a green tick or a red cross next to each one in GitHub.
 
 The upload only sends files that changed, only deletes files it uploaded
 itself, and refuses to upload anywhere except this site's own folder, so it
-can never touch greensmokestudio.com.
+can never touch anything else on the hosting account.
 
 **Settings it needs** (github.com → this repo → Settings → Secrets and variables → Actions):
 
 | Name | Kind | Value |
 | --- | --- | --- |
-| `SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`, `SFTP_KNOWN_HOSTS` | Secrets | The Krystal login and server identity (same as the main site) |
-| `REMOTE_DIR` | Variable | `autumn.greensmokestudio.com` |
+| `SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`, `SFTP_KNOWN_HOSTS` | Secrets | The Krystal login and server identity for the stayingseason.com package |
+| `REMOTE_DIR` | Variable | `autumn.stayingseason.com` |
 | `ENQUIRY_EMAIL` | Variable | Where the Enquire form sends messages. Kept here, not in the code. |
 
 **Rolling back:** Actions tab → *Deploy to Krystal* → *Run workflow*, and paste
@@ -80,9 +80,9 @@ the commit ID of the version you want live.
 1. In `includes/config.php`, change `'launched' => false` to `true`
    (this lets Google list the site), commit and merge.
 2. In Google Search Console (search.google.com/search-console), add the
-   property `https://autumn.greensmokestudio.com`, verify it (the HTML tag
+   property `https://autumn.stayingseason.com`, verify it (the HTML tag
    method: send Claude the tag and it goes in `includes/head.php`), then
-   submit the sitemap: `https://autumn.greensmokestudio.com/sitemap.xml`.
+   submit the sitemap: `https://autumn.stayingseason.com/sitemap.xml`.
 3. Test the homepage at https://search.google.com/test/rich-results
    (it should find a "Local business" / lodging item).
 4. Paste a page link into WhatsApp or Facebook to check the preview photo.
@@ -103,4 +103,4 @@ Copy this repository, then:
    `show on:` tags in `content/faqs.md`). Old links to `/family-stays`
    then show "page not found".
 3. Set that repository's `REMOTE_DIR` to its own subdomain folder
-   (`winter.greensmokestudio.com` or `spring.greensmokestudio.com`).
+   (`winter.stayingseason.com` or `spring.stayingseason.com`).

@@ -8,7 +8,7 @@
 # Needs these repository secrets (Settings -> Secrets and variables -> Actions):
 #   SFTP_HOST, SFTP_USER, SFTP_PASSWORD, SFTP_KNOWN_HOSTS
 # And these repository variables:
-#   REMOTE_DIR      required: the subdomain's folder, e.g. autumn.greensmokestudio.com
+#   REMOTE_DIR      required: the subdomain's folder, e.g. autumn.stayingseason.com
 #   ENQUIRY_EMAIL   where the Enquire form sends messages (kept out of the code)
 #   SFTP_PORT       optional, default 722
 

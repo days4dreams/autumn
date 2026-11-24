@@ -6,6 +6,11 @@ DirectoryIndex index.php
 
 RewriteEngine On
 
+# The site moved from autumn.greensmokestudio.com in November 2026:
+# anyone (or Google) arriving at the old address is sent to the same page here.
+RewriteCond %{HTTP_HOST} ^autumn\.greensmokestudio\.com$ [NC]
+RewriteRule ^(.*)$ https://autumn.stayingseason.com/$1 [R=301,L,NE]
+
 # Always use the secure https:// address. (The second line stops a loop if
 # the host ever puts a proxy in front that handles https itself.)
 RewriteCond %{HTTPS} off

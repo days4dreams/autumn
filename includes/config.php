@@ -12,7 +12,7 @@ $site = [
     'tagline'  => 'by Staying Season',
     // The homepage's title in Google and browser tabs (after the name).
     'home_title' => 'Holiday cottage in Alnwick, Northumberland',
-    'url'      => 'https://autumn.greensmokestudio.com', // no trailing slash
+    'url'      => 'https://autumn.stayingseason.com', // no trailing slash
     'year'     => date('Y'), // updates itself every January
 
     // false while the site still has placeholder text: Google is asked not
@@ -26,8 +26,8 @@ $site = [
     'staying_season_url' => '#',
 
     // The Enquire form's emails come "from" this address (replies go to the guest).
-    // An address on greensmokestudio.com is less likely to land in spam.
-    'mail_from' => 'noreply@greensmokestudio.com',
+    // An address on the site's own domain is less likely to land in spam.
+    'mail_from' => 'noreply@stayingseason.com',
 
     // Shown to Google in the structured data (includes/structured-data.php).
     'address' => [
