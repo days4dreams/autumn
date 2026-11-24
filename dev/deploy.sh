@@ -17,7 +17,7 @@
 # Settings (from GitHub secrets / variables):
 #   SFTP_HOST, SFTP_USER, SFTP_PASSWORD   required
 #   SFTP_PORT        default 722 (Krystal's SFTP port)
-#   REMOTE_DIR       required: the subdomain's folder, e.g. autumn.greensmokestudio.com
+#   REMOTE_DIR       required: the subdomain's folder, e.g. autumn.stayingseason.com
 #   SFTP_KNOWN_HOSTS optional but recommended: the server's SSH key, so the
 #                    upload can only go to the real Krystal server
 #   DRY_RUN=1        list what would change without uploading anything
@@ -36,7 +36,7 @@ REMOTE="${REMOTE%/}"
 # site's and its clean-up could remove the main site's files.
 case "$REMOTE" in
   ""|"."|"/"|"~"|public_html|public_html/*|/*|*..*)
-    echo "::error::REMOTE_DIR is '$REMOTE'. It must be the subdomain's own folder, e.g. autumn.greensmokestudio.com (not public_html). Nothing was uploaded." >&2
+    echo "::error::REMOTE_DIR is '$REMOTE'. It must be the subdomain's own folder, e.g. autumn.stayingseason.com (not public_html). Nothing was uploaded." >&2
     exit 1 ;;
 esac
 
