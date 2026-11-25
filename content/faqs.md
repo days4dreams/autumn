@@ -90,7 +90,7 @@ Booking directly with us is our best rate: there are no platform fees, and you d
 
 ### How do payment and cancellation work?
 show on: enquire
-When you book direct, we take 50% when you book and the rest 14 days before you arrive. Cancel more than 21 days before your stay at no cost; after that, we keep the 50% paid at booking. Our [terms](/terms) have the full details.
+When you book direct, we take 50% when you book and the rest 21 days before you arrive. Cancel more than 21 days before your stay at no cost; after that, we keep the 50% paid at booking. Our [terms](/terms) have the full details.
 
 ### Is there a security deposit?
 show on: enquire

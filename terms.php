@@ -30,7 +30,7 @@ require __DIR__ . '/includes/head.php';
     <p>This gives us time to clean and prepare the house for the next guests. Ask us about early check-in or late check-out; we'll help when we can.</p>
 
     <h2>Payment</h2>
-    <p>We take 50% of the total when you book, and the remaining 50% 14 days before you arrive. The full amount, any extras and the cancellation terms are shown when you book.</p>
+    <p>We take 50% of the total when you book, and the remaining 50% 21 days before you arrive. The full amount, any extras and the cancellation terms are shown when you book.</p>
 
     <h2>Security deposit</h2>
     <p>We place a hold of £125 on your card to cover any damage or loss during your stay. It's released once we've checked that everything is in order, usually within 1–2 days of check-out.</p>
